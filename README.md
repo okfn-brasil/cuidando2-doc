@@ -14,9 +14,20 @@ Projeto *Cuidando do Meu Bairro* e [portal Cuidando.vc](http://cuidando.vc), par
 
 ...
 
+### Replicando apenas o site
+Na ausência de dados da cidade, operaria em modo "somente leitura".
+...
+
+### Replicando serviços
+...
+
+### Replicação completa e fork 
+... 
+
+
 ## CRÉDITOS E LICENÇAS
 
-A presente documentação e todos os scripts [deste módulo de documentação](https://github.com/okfn-brasil/cuidando2-doc) estão licenceados sob [CC-BY 4.0](http://creativecommons.org/licenses/by/4.0/).
+A presente documentação e todos os scripts [deste módulo de documentação](https://github.com/okfn-brasil/cuidando2-doc) estão licenceados sob **[CC-BY 4.0](http://creativecommons.org/licenses/by/4.0/)**.
  
 O Cuidando2 é um projeto realizado por muitas mãos e disperso por muitos módulos. Os créditos são listados a seguir, com indicação das respectivas licenças:
 
