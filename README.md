@@ -1,6 +1,6 @@
 # Cuidando do Meu Bairro
 
-Projeto *Cuidando do Meu Bairro* de apresentação, discussão e geolocalização do orçamento municipal. 
+Projeto *Cuidando do Meu Bairro* de apresentação, interatividade e geolocalização do orçamento municipal. 
 
 **Acesso**:
 
@@ -56,25 +56,38 @@ Cada módulo (e contexto de projeto) é responsável por seus respectivos [endpo
 
 ...
 
+### Replicando apenas o site
+Na ausência de dados da cidade, operaria em modo "somente leitura".
+...
+
+### Replicando serviços
+...
+
+### Replicação completa e fork 
+... 
+
 ## CRÉDITOS E LICENÇAS
 
-A presente documentação e todos os scripts [deste módulo de documentação](https://github.com/okfn-brasil/cuidando2-doc) estão licenceados sob [CC-BY 4.0](http://creativecommons.org/licenses/by/4.0/).
+A presente documentação e todos os scripts [deste módulo de documentação](https://github.com/okfn-brasil/cuidando2-doc) estão licenceados sob **[CC-BY 4.0](http://creativecommons.org/licenses/by/4.0/)**.
  
 O Cuidando2 é um projeto realizado por muitas mãos e disperso por muitos módulos. Os créditos são listados a seguir, com indicação das respectivas licenças:
 
 * [Site Cuidando do Município](https://github.com/okfn-brasil/cuidando2.git): licença XX em nome de 
 
- * *Coordenação*:
+ * *Coordenação*: Gisele (geral) e Andrés (software) 
+ * *Financeamento*: xxx
+ * *Apoio*: USP e OKBR
 
- * *Design*:
+ * *Design*: Sol
 
- * *Software*:
+ * [*Software*](https://github.com/okfn-brasil/cuidando2/graphs/contributors): @andresmrm, @alexandre? @LuizArmesto?
 
 * [Gastos Abertos](https://github.com/okfn-brasil/gastos_abertos): licença XX em nome de 
 
- * *Coordenação*:
+ * *Coordenação*: OKBR (fulanos?)
+ * *Financeamento*: Google-XXX
 
- * *Software*:
+ * [*Software*](https://github.com/okfn-brasil/gastos_abertos/graphs/contributors): @andresmrm , @aivuk, @LuizArmesto, @waffle-iron, @carlosandrade, @lpirola
 
 * [Microserviços](https://en.wikipedia.org/wiki/Microservices) e módulos de apoio:
 
@@ -86,6 +99,8 @@ O Cuidando2 é um projeto realizado por muitas mãos e disperso por muitos módu
 
   *  [Tagarela](https://github.com/okfn-brasil/tagarela): licença XX em nome de 
     * *Coordenação*: ...
+    * *Financeamento*: ...
+    * *Apoio*: USP, OKBR,...
 
     * *Design*:
 
