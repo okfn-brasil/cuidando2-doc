@@ -41,7 +41,7 @@ Abaixo estão representados os diversos módulos nos quais esse projeto se basei
 
 As setas avermelhadas indicam conexões em que as escritas provavelmente necessitarão de um [token](https://github.com/okfn-brasil/viralata#protocol).
 
-Cada módulo (e contexto de projeto) é responsável por seus respectivos [endpoints](http://www.w3.org/TR/wsdl20/#Endpoint):
+A navegação HTML é de responsabilidade do *Cuidando2*, em [cuidando.vc](https://cuidando.vc), que através de [Ajax](https://en.wikipedia.org/wiki/Ajax_(programming)) faz a comunicação com cada módulo, nos respectivos [endpoints](http://www.w3.org/TR/wsdl20/#Endpoint):
 
 | Função | Responsabilidade | **Endpoint** | Notas |
 |--------|------------------|--------------|-------|
