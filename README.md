@@ -45,12 +45,11 @@ Cada módulo (e contexto de projeto) é responsável por seus respectivos [endpo
 
 | Função | Responsabilidade | **Endpoint** | Notas |
 |--------|------------------|--------------|-------|
-|Geolocalização|*Gastos Abertos*|[demo.gastosabertos.org/?1](http://demo.gastosabertos.org)|       |
-|Dados de execução orçamentária|*Gastos Abertos*|[demo.gastosabertos.org/?2](http://demo.gastosabertos.org)|       |
-|Autenticação dos usuários|*Vira-Lata*|[cuidando.org.br:5002 ??](http://cuidando.org.br:5002)|token de acesso |
-|Comentários dos usuários|*Tagarela* |[cuidando.org.br:5002 ??](http://cuidando.org.br:5002)|registro dos textos|
-|Interface com eSIC|[cuidando.org.br:5004 ??](http://cuidando.org.br:5004) |*EsicLivre*|realização de pedidos de informação|
-
+|Geolocalização|*Gastos Abertos*|[demo.gastosabertos.org/?1](http://demo.gastosabertos.org)|leitura das coordenadas|
+|Dados de execução orçamentária|*Gastos Abertos*|[demo.gastosabertos.org/?2](http://demo.gastosabertos.org)|consulta à base de dados|
+|Autenticação dos usuários|*Vira-Lata*|[cuidando.org.br:5002 ??](http://cuidando.org.br:5002)|token de acesso, leitura/escrita|
+|Comentários dos usuários|*Tagarela* |[cuidando.org.br:5002 ??](http://cuidando.org.br:5002)|leitura/escrita dos textos|
+|Interface com eSIC|*EsicLivre*|[cuidando.org.br:5004 ??](http://cuidando.org.br:5004) |realização de pedidos de informação, leitura/escrita|
 
 ## Modos de operação e replicação
 
