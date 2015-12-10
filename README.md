@@ -5,17 +5,17 @@ Projeto *Cuidando do Meu Bairro* de apresentação, interatividade e geolocaliza
 **Acesso**:
 
 * Portal e implantação para o município de São Paulo em [*Cuidando.vc*](http://cuidando.vc).
-
 * Fontes de dados orçamentários nos [webservices do projeto *GastosAbertos.org*](http://demo.gastosabertos.org).
 
 **Códigos-fonte** (repositórios [git](https://pt.wikipedia.org/wiki/Git)):
 
 * Site: [okfn-brasil/cuidando2](https://github.com/okfn-brasil/cuidando2) 
-
 * Módulos de dados orçamentários:
-
   * Fontes dos engines e extratores: [okfn-brasil/gastos\_abertos](https://github.com/okfn-brasil/gastos_abertos), [teaser.gastosabertos.org](https://github.com/okfn-brasil/teaser.gastosabertos.org).
   * Dados e documentação: [okfn-brasil/gastos\_abertos\_dados](https://github.com/okfn-brasil/gastos_abertos_dados), [okfn-brasil/documents/gastos\_abertos](https://github.com/okfn-brasil/documents/blob/master/gastos_abertos).
+* Autenticação de usuários: [okfn-brasil/viralata](https://github.com/okfn-brasil/viralata) 
+* Comunicação dos usuários: [okfn-brasil/tagarela](https://github.com/okfn-brasil/tagarela) 
+* Intermediação do eSIC:  [okfn-brasil/esiclivre](https://github.com/okfn-brasil/esiclivre) 
 
 **Documentação**:
 
@@ -53,7 +53,9 @@ Cada módulo (e contexto de projeto) é responsável por seus respectivos [endpo
 
 ## Modos de operação e replicação
 
-...
+Conforme a finalidade, o projeto pode ser copiado e adaptado, parcial ou integralmente. O caso típico é a replicação para atuar com outros municípios, mudando apenas o escopo de dados no Gastos Abertos e adaptando-se o *EsicLivre* para as peculiaridades do eSIC do município. 
+
+Uma outra forma comum de replicação é a integral, quando se deseja instalar e testar localmente (o programador no seu computador) para entender melhor o funcionamento do software como um todo, ou para realizar (através de *fork*) adaptações maiores.
 
 ### Replicando apenas o site
 Na ausência de dados da cidade, operaria em modo "somente leitura".
@@ -62,7 +64,7 @@ Na ausência de dados da cidade, operaria em modo "somente leitura".
 ### Replicando serviços
 ...
 
-### Replicação completa e fork 
+### Replicação completa 
 ... 
 
 ## CRÉDITOS E LICENÇAS
