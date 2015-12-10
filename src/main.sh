@@ -87,6 +87,8 @@ git clone https://github.com/okfn-brasil/viralata.git
 #apoio
 git clone https://github.com/okfn-brasil/viratoken.git
 
+... lembrar de ver config.js
+
 ## Criar virtualenv 
 
 #@IF se nunca usou, fazer antes

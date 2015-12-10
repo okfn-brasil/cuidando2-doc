@@ -107,8 +107,11 @@ sudo nano tagarela/settings/local_settings.py
 
 
 # Instale as dependências Python.
-# É importante instalar nessa ordem para usar as versões do ViraToken
-# e do Vira-Lata do repositório clonado, e não do PyPi.
+
+É importante instalar nessa ordem para usar as versões do ViraToken
+e do Vira-Lata do repositório clonado, e não do PyPi.
+
+```
 cd viratoken
 python setup.py develop
 
@@ -126,3 +129,5 @@ python manage.py initdb
 
 cd ../cuidando2
 python setup.py develop
+```
+
