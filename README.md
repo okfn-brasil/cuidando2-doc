@@ -37,7 +37,7 @@ A geocodificação desses endereços é realizada pelos serviços e [OpenStreetM
 
 Abaixo estão representados os diversos módulos nos quais esse projeto se baseia:
 
-![Alt text](https://raw.githubusercontent.com/okfn-brasil/cuidando2-doc/master/img/cuidando2_arq2.svg)
+![Alt text](https://raw.githubusercontent.com/okfn-brasil/cuidando2-doc/master/img/cuidando2_arq2-827px.png)
 
 As setas avermelhadas indicam conexões em que as escritas provavelmente necessitarão de um [token](https://github.com/okfn-brasil/viralata#protocol).
 
