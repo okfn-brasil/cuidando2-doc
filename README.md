@@ -1,6 +1,6 @@
 # Cuidando do Meu Bairro
 
-Projeto *Cuidando do Meu Bairro* de apresentação, interatividade e geolocalização do orçamento municipal. 
+Projeto *Cuidando do Meu Bairro*: apresentação participativa e geolocalização do orçamento municipal. 
 
 **Acesso**:
 
@@ -20,18 +20,16 @@ Projeto *Cuidando do Meu Bairro* de apresentação, interatividade e geolocaliza
 **Documentação**:
 
 * Tutoriais na [*Wikiversity-Português*, Projeto Cuidando do Meu Bairro](https://pt.wikiversity.org/wiki/Projeto_Cuidando_do_Meu_Bairro).
-
 * Instruções para o desenvolvedor: [okfn-brasil/cuidando2-doc](https://github.com/okfn-brasil/cuidando2-doc).
-
 * Administração do projeto: [wiki.okfn.org](http://wiki.okfn.org/Open_Knowledge_Brasil/Gastos_Abertos).
 
 ## Histórico e versões
-Este projeto teve origem no [Cuidando do Meu Bairro de 2013](http://cuidando.org.br), que busca mapear a execução do orçamento municipal de São Paulo, não só em regiões, mas também colocando um ponto no mapa para cada despesa. Por isso foi apelidado de **Cuidando2**: uma nova interface, novos recursos e melhoras internas no software.
+Este projeto teve origem no [Cuidando do Meu Bairro de 2013](http://cuidando.org.br), que buscava mapear a execução do orçamento municipal de São Paulo, não só em regiões, mas também colocando um ponto no mapa para cada despesa. Por isso o presente projeto foi apelidado de **Cuidando2**: uma nova interface, novos recursos e melhoras nos dados gerados pelo software.
 
 Como os [dados obtidos da prefeitura](http://orcamento.prefeitura.sp.gov.br/orcamento/execucao.html) não têm as coordenadas geográficas de cada despesa (no máximo algumas tem a região a que se destinam), o ponto de partida são os endereços nos textos das descrições das despesas, que por sua vez podem ser submetidos à [geocodificação](https://en.wikipedia.org/wiki/Geocoding) em ferramentas adequadas.
 
 A extração dos endereços a partir do texto é obtida através de  [*expressões regulares*](https://pt.wikipedia.org/wiki/Express%C3%A3o_regular).
-A geocodificação desses endereços é realizada pelos serviços e [OpenStreetMap-Nomination](http://wiki.openstreetmap.org/wiki/Nominatim) e [google-geocoding-api](https://developers.google.com/maps/documentation/geocoding/intro). Esse processo não é perfeito, acumula erros tanto fase de extração como da fase de geocodificação, de modo que muitas despesas não são mapeadas, ou acabam exibidas no local errado. No Cuidando2 o processo foi aperfeiçoado para reduzir a taxa de erros.
+A geocodificação desses endereços é realizada pelas [API](https://en.wikipedia.org/wiki/Application_programming_interface)s [OpenStreetMap-Nomination](http://wiki.openstreetmap.org/wiki/Nominatim) e [Google-geocoding](https://developers.google.com/maps/documentation/geocoding/intro). Esse processo não é perfeito, acumula erros tanto da fase de extração como da fase de geocodificação, de modo que muitas despesas não são mapeadas, ou acabam exibidas no local errado. No Cuidando2 o processo foi aperfeiçoado para reduzir a taxa de erros.
 
 ## Arquitetura
 
