@@ -58,8 +58,10 @@ Conforme a finalidade, o projeto pode ser copiado e adaptado, parcial ou integra
 Uma outra forma comum de replicação é a integral, quando se deseja instalar e testar localmente (o programador no seu computador) para entender melhor o funcionamento do software como um todo, ou para realizar (através de *fork*) adaptações maiores.
 
 ### Replicando apenas o site
-Na ausência de dados da cidade, operaria em modo "somente leitura".
-...
+Na ausência de dados da cidade, operaria em modo "somente leitura". Util para designers e trabalhos restritos ao site.
+
+Texto completo de instruções em [install-municipio.md](install-municipio.md).
+
 
 ### Replicando serviços
 ...
