@@ -7,7 +7,7 @@ Foi  adotada a postura [convention over configuration](https://en.wikipedia.org/
 
 Padrões de referência:
 
-* Servidores web homologados:  [Ubuntu 14.04 LTS](https://en.wikipedia.org/wiki/List_of_Ubuntu_releases#Ubuntu_14.04_LTS_.28Trusty_Tahr.29), mais algum?
+* Servidores web homologados:  [Ubuntu 14 LTS](https://en.wikipedia.org/wiki/List_of_Ubuntu_releases#Ubuntu_14.04_LTS_.28Trusty_Tahr.29), mais algum?
 * Navegadores homologados: Firefox 42+, Chorme 46+.
 
 Pode-se supor também que o *script de instalação* roda sob uma pasta vazia chamada *sandbox*,
@@ -18,17 +18,17 @@ cd sandbox
 ```
 
 ## Conferir ambiente
-Será entendido como "ambiente" do projeto,
+Será entendido como "ambiente" do servidor do projeto,
 
-* Linux: `lsb_release -a` Exemplo: "No LSB modules are available. (...) Description: Ubuntu 14.04.3 LTS (...)".
-* Git: `git --version` Exemplo: "git version 1.9.1".
-* Javascript engine V8: 4.6.85
-* NodeJS: `nodejs --version` Exemplo: "v5.2.0" (cuidando se inferior, aten0.X)
-* npm (do NodeJS): `npm -v` Exemplo: "3.3.12" (cuidado se 1.X)". O mesmo `npm` pode indicar todos com o comando `npm version`
+* Linux **Ubuntu 14.04+ LTS**: pode ser mais atualizado, mas são pressupostas restrições do LTS nos exemplos de atualização. Conferir com `lsb_release -a` (resultará ex. 14.04.3).
+* **Git 1.9+**: `git --version` (ex. 1.9.1).
+* Server-side **Javascript engine V8, v4.6+**: `node -p process.versions.v8` (ex. 4.6.85)
+* **NodeJS v5.2+**: `nodejs --version`(ex. v5.2.0)
+* **npm 3.5+** (do NodeJS): `npm -v` (ex. 3.5.2) ou `npm version`, que mostra também o nodejs e o v8.
 
 ### Atualizar o ambiente
-O softeware 
-As versões mínimas indicadas de  *NodeJS* ou `npm` precisam ser respeitadas. Na sua instalação default o UBUNTU 14 LTS, todavia, não oferece versões atualizadas, nem mesmo após o tradicional `apt-get install`. O procedimento mais simples e correto para instalar é o seguinte:
+
+As versões mínimas indicadas de  *NodeJS* e `npm` precisam ser respeitadas. Na sua instalação default o UBUNTU 14 LTS, todavia, não oferece versões atualizadas, nem mesmo após o tradicional `apt-get install`. O procedimento mais simples e correto para instalar é o seguinte:
 
 ```
  curl -sL https://deb.nodesource.com/setup_5.x | sudo -E bash -
