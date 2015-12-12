@@ -3,9 +3,7 @@ Uma versão compacta das instruções a seguir, é oferecida também em [`munici
 ## Escolhas e convenções
 O projeto pode rodar nas mais diversas plataformas com um mínimo de adaptações. De qualquer forma, a título de teste e por limitação de tempo da equipe, nas homologação apenas alguns ambientes foram adotados, e para reduzir ainda mais o custo de teste e deixar mais clara e limpa a documentação, algumas convenções simples foram adotadas.
 
-Foi  adotada a postura [convention over configuration](https://en.wikipedia.org/wiki/Convention_over_configuration), ou seja, não serão comentas todas as possibilidades de configuração, pressupomos certas convenções, e ficaria a cargo do usuário ou de uma documentação secundária qualquer desvio da convenção adotada.
-
-Padrões de referência:
+Foi  adotada a postura [convention over configuration](https://en.wikipedia.org/wiki/Convention_over_configuration), ou seja, não serão comentas todas as possibilidades de configuração, pressupomos certas convenções, e ficaria a cargo do usuário ou de uma documentação secundária qualquer desvio da convenção adotada.  Padrões de referência:
 
 * Servidores web homologados:  [Ubuntu 14 LTS](https://en.wikipedia.org/wiki/List_of_Ubuntu_releases#Ubuntu_14.04_LTS_.28Trusty_Tahr.29), mais algum?
 * Navegadores homologados: Firefox 42+, Chorme 46+.
