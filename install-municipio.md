@@ -21,23 +21,49 @@ Será entendido como "ambinete",
 
 * Linux: `lsb_release -a` Exemplo: "No LSB modules are available. (...) Description: Ubuntu 14.04.3 LTS (...)".
 * Git: `git --version` Exemplo: "git version 1.9.1".
-* NodeJS: `npm -v` Exemplo: "1.3.10".
+* Javascript engine V8: 4.6.85
+* NodeJS: `nodejs --version` Exemplo: "v5.2.0" (cuidando se inferior, aten0.X)
+* npm (do NodeJS): `npm -v` Exemplo: "3.3.12" (cuidado se 1.X)".
 
+OPS: `npm >= 3 e node >= 5`
+
+### Atualizar o ambiente
+As versões mínimas indicadas de  *NodeJS* ou `npm` precisam ser respeitadas. Na sua instalação default o UBUNTU 14 LTS, todavia, não oferece versões atualizadas, nem mesmo após o tradicional `apt-get install`. O procedimento mais simples e correto para instalar é o seguinte:
+
+```
+ curl -sL https://deb.nodesource.com/setup_5.x | sudo -E bash -
+ sudo apt-get install -y nodejs
+```
+que já é suficiente para ambos,  *NodeJS* e `npm`. Confira as versões com `npm -v`  e `nodejs --version`. O V8 em geral já se encontra atualizado, mas vale conferir com `nodejs -p process.versions.v8`.
+
+Nota: o `npm` vem com o `nodejs`, *evite* o `apt-get install npm` pois pode aparentar erro ou gerar versão muito antiga. Para garantir a atualização do `npm` use ele mesmo,
+
+```
+ sudo npm install npm -g 
+```
 
 ## Clonar e instalar o projeto
 
 ```
 git clone https://github.com/okfn-brasil/cuidando2.git
-
-#@IF sem Node-JS, instalar
-sudo apt-get install npm
-
-npm i
+cd cuidando2
 ```
 
-O ultimo comando vai listar milhares de linhas na forma `npm http GET https://registry.npmjs.org/...` e mensagens vinculadas, sendo algumas na forma `npm ERR! ...` que podem ser ignorsdas. Quando terminar, todavia, não podem haver mensagens de erro. 
+Em seguida verifique as configurações de `configs/config.js`. O caso típico é mudar apenas o domínio para o local de teste, 
 
-"Depois configure um `src/config.js`"?? de onde copiar?
+```
+nano configs/config.js
+  ...
+  const _domain = 'http://localhost:'
+  ...
+```
+
+Caso não vá apenas simular o site, ou apenas reusar os microserviços de São Paulo, há que se configurar mais parâmetros. Feito isso, roda a instalação:
+
+```
+npm i
+```
+O ultimo comando vai um barra de progresso... Sinal que está indo tudo bem.
 
 ## Rodar
 
