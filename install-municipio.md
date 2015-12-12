@@ -1,15 +1,16 @@
 Uma versão compacta das instruções a seguir, é oferecida também em [`municipio.sh`](./src/municipio.sh).
 
-## Convenções
+## Escolhas e convenções
+O projeto pode rodar nas mais diversas plataformas com um mínimo de adaptações. De qualquer forma, a título de teste e por limitação de tempo da equipe, nas homologação apenas alguns ambientes foram adotados, e para reduzir ainda mais o custo de teste e deixar mais clara e limpa a documentação, algumas convenções simples foram adotadas.
 
-Estamos adotando [Convention over configuration](https://en.wikipedia.org/wiki/Convention_over_configuration), ou seja, não ficamos comentando opções do usuário, pressupomos um padrão, e ficaria a cargo do usuário ou de uma documentação secundária qualquer desvio do padrão.
+Foi  adotada a postura [convention over configuration](https://en.wikipedia.org/wiki/Convention_over_configuration), ou seja, não serão comentas todas as possibilidades de configuração, pressupomos certas convenções, e ficaria a cargo do usuário ou de uma documentação secundária qualquer desvio da convenção adotada.
 
-Padrões:
+Padrões de referência:
 
-* Ambiente [Ubuntu 14.04 LTS](https://en.wikipedia.org/wiki/List_of_Ubuntu_releases#Ubuntu_14.04_LTS_.28Trusty_Tahr.29)
+* Servidores web homologados:  [Ubuntu 14.04 LTS](https://en.wikipedia.org/wiki/List_of_Ubuntu_releases#Ubuntu_14.04_LTS_.28Trusty_Tahr.29), mais algum?
 * Navegadores homologados: Firefox 42+, Chorme 46+.
 
-Outra convenção é que o script de instalação roda sob uma pasta vazia chamada *sandbox*,
+Pode-se supor também que o *script de instalação* roda sob uma pasta vazia chamada *sandbox*,
 
 ```
 mkdir sandbox
@@ -17,17 +18,16 @@ cd sandbox
 ```
 
 ## Conferir ambiente
-Será entendido como "ambinete",
+Será entendido como "ambiente" do projeto,
 
 * Linux: `lsb_release -a` Exemplo: "No LSB modules are available. (...) Description: Ubuntu 14.04.3 LTS (...)".
 * Git: `git --version` Exemplo: "git version 1.9.1".
 * Javascript engine V8: 4.6.85
 * NodeJS: `nodejs --version` Exemplo: "v5.2.0" (cuidando se inferior, aten0.X)
-* npm (do NodeJS): `npm -v` Exemplo: "3.3.12" (cuidado se 1.X)".
-
-OPS: `npm >= 3 e node >= 5`
+* npm (do NodeJS): `npm -v` Exemplo: "3.3.12" (cuidado se 1.X)". O mesmo `npm` pode indicar todos com o comando `npm version`
 
 ### Atualizar o ambiente
+O softeware 
 As versões mínimas indicadas de  *NodeJS* ou `npm` precisam ser respeitadas. Na sua instalação default o UBUNTU 14 LTS, todavia, não oferece versões atualizadas, nem mesmo após o tradicional `apt-get install`. O procedimento mais simples e correto para instalar é o seguinte:
 
 ```
