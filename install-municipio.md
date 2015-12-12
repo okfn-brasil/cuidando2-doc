@@ -10,12 +10,6 @@ Padrões de referência:
 * Servidores web homologados:  [Ubuntu 14 LTS](https://en.wikipedia.org/wiki/List_of_Ubuntu_releases#Ubuntu_14.04_LTS_.28Trusty_Tahr.29), mais algum?
 * Navegadores homologados: Firefox 42+, Chorme 46+.
 
-Pode-se supor também que o *script de instalação* roda sob uma pasta vazia chamada *sandbox*,
-
-```
-mkdir sandbox
-cd sandbox
-```
 
 ## Conferir ambiente
 Será entendido como "ambiente" do servidor do projeto,
