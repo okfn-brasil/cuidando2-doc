@@ -43,7 +43,7 @@ A navegação HTML é de responsabilidade do *Cuidando2*, em [cuidando.vc](https
 
 | Função | Responsabilidade | **Endpoint** | Notas |
 |--------|------------------|--------------|-------|
-|Geolocalização|*Gastos Abertos*|[https://site-cuidando.rhcloud.com/dados/api/v1 site-cuidando.rhcloud.com/dados/api/v1](https://site-cuidando.rhcloud.com/dados/api/v1)|leitura das coordenadas|
+|Geolocalização|*Gastos Abertos*|[site-cuidando.rhcloud.com/dados/api/v1](https://site-cuidando.rhcloud.com/dados/api/v1)|leitura das coordenadas|
 |Dados de execução orçamentária|*Gastos Abertos*|[demo.gastosabertos.org](http://demo.gastosabertos.org)|consulta à base de dados|
 |Autenticação dos usuários|*Vira-Lata*|[viralata-cuidando.rhcloud.com](https://viralata-cuidando.rhcloud.com)|token de acesso, leitura/escrita|
 |Comentários dos usuários|*Tagarela* |[tagarela-cuidando.rhcloud.com](https://tagarela-cuidando.rhcloud.com)|leitura/escrita dos textos|
