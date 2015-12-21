@@ -64,10 +64,12 @@ Texto completo de instruções em [install-municipio.md](install-municipio.md).
 
 
 ### Replicando serviços
-...
+Se o interesse for reproduzir apenas os microserviços, deve-se reproduzir também as bases de dados. 
+
+Texto completo de instruções em [install-services.md](install-services.md).
 
 ### Replicação completa 
-... 
+Para replicar ambos, o site e os serviços, um script mais consido também é oferecido:  [install-full.sh](install-full.sh).
 
 ## CRÉDITOS E LICENÇAS
 
