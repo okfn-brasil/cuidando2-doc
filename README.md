@@ -49,7 +49,7 @@ A navegação HTML é de responsabilidade do *Cuidando2*, em [cuidando.vc](https
 |Comentários dos usuários|*Tagarela* |[tagarela-cuidando.rhcloud.com](https://tagarela-cuidando.rhcloud.com)|leitura/escrita dos textos|
 |Interface com eSIC|*EsicLivre*|[cuidando.vc/esiclivre](https://cuidando.vc/esiclivre) |realização de pedidos de informação, leitura/escrita|
 
-
+Cada um desses *endpoints* apresenta também uma documentação mais detalhada da API quando acessado diretamente do navegador, exemplificando o uso de cada uma das operações [REST](https://en.wikipedia.org/wiki/Representational_state_transfer) disponíveis no microserviço.
 
 ## Modos de operação e replicação
 
