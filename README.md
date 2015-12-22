@@ -39,15 +39,15 @@ Abaixo estão representados os diversos módulos nos quais esse projeto se basei
 
 As setas avermelhadas indicam conexões em que as escritas provavelmente necessitarão de um [token](https://github.com/okfn-brasil/viralata#protocol).
 
-A navegação HTML é de responsabilidade do *Cuidando2*, em [cuidando.vc](https://cuidando.vc), que através de [Ajax](https://en.wikipedia.org/wiki/Ajax_(programming)) faz a comunicação com cada módulo, nos respectivos [endpoints](http://www.w3.org/TR/wsdl20/#Endpoint):
+A navegação HTML é de responsabilidade do [*Cuidando2*](https://github.com/okfn-brasil/cuidando2), implementado atualmente em [cuidando.vc](https://cuidando.vc), que através de [Ajax](https://en.wikipedia.org/wiki/Ajax_(programming)) faz a comunicação com cada módulo, nos respectivos [endpoints](http://www.w3.org/TR/wsdl20/#Endpoint):
 
-| Função | Responsabilidade | **Endpoint** | Notas |
+| Função | Responsabilidade | **Endpoint** em uso | Notas |
 |--------|------------------|--------------|-------|
 |Geolocalização|*Gastos Abertos*|[site-cuidando.rhcloud.com/dados/api/v1](https://site-cuidando.rhcloud.com/dados/api/v1)|leitura das coordenadas|
 |Dados de execução orçamentária|*Gastos Abertos*|[demo.gastosabertos.org](http://demo.gastosabertos.org)|consulta à base de dados|
-|Autenticação dos usuários|*Vira-Lata*|[viralata-cuidando.rhcloud.com](https://viralata-cuidando.rhcloud.com)|token de acesso, leitura/escrita|
-|Comentários dos usuários|*Tagarela* |[tagarela-cuidando.rhcloud.com](https://tagarela-cuidando.rhcloud.com)|leitura/escrita dos textos|
-|Interface com eSIC|*EsicLivre*|[cuidando.vc/esiclivre](https://cuidando.vc/esiclivre) |realização de pedidos de informação, leitura/escrita|
+|Autenticação dos usuários|[*Vira-Lata*](https://github.com/okfn-brasil/viralata)|[viralata-cuidando.rhcloud.com](https://viralata-cuidando.rhcloud.com)|token de acesso, leitura/escrita|
+|Comentários dos usuários|[*Tagarela*](https://github.com/okfn-brasil/tagarela) |[tagarela-cuidando.rhcloud.com](https://tagarela-cuidando.rhcloud.com)|leitura/escrita dos textos|
+|Interface com eSIC|[*EsicLivre*](https://github.com/okfn-brasil/esiclivre)|[cuidando.vc/esiclivre](https://cuidando.vc/esiclivre) |realização de pedidos de informação, leitura/escrita|
 
 Cada um desses *endpoints* apresenta também uma documentação mais detalhada da API quando acessado diretamente do navegador, exemplificando o uso de cada uma das operações [REST](https://en.wikipedia.org/wiki/Representational_state_transfer) disponíveis no microserviço.
 
