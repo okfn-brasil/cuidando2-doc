@@ -79,50 +79,44 @@ Para replicar ambos, o site e os serviços, um script mais consido também é of
 
 A presente documentação e todos os scripts [deste módulo de documentação](https://github.com/okfn-brasil/cuidando2-doc) estão licenceados sob **[CC-BY 4.0](http://creativecommons.org/licenses/by/4.0/)**.
  
-O Cuidando2 é um projeto realizado por muitas mãos e disperso por muitos módulos. Os créditos são listados a seguir, com indicação das respectivas licenças:
+O Cuidando2 é um projeto realizado por várias mãos,
 
-* [Site Cuidando do Município](https://github.com/okfn-brasil/cuidando2.git): licença XX em nome de 
+* Alexandre Evangelista de Souza Júnior ([@alexandre](https://github.com/alexandre))
+* Andrés M. R. Martano ([@andresmrm](https://github.com/andresmrm))
+* Gisele S. Craveiro (coordenação), 
+* Jutta Machado Schimdt
+* Solaine Lima
 
- * *Coordenação*: Gisele (geral) e Andrés (software) 
- * *Financeamento*: xxx
- * *Apoio*: USP e OKBR
+por mais de um apoio,
 
- * *Design*: Sol
+* [COLAB-USP](http://colab.each.usp.br/) 
+* [OKBR](http://br.okfn.org/)
+* ? (financeamento)
 
- * [*Software*](https://github.com/okfn-brasil/cuidando2/graphs/contributors): @andresmrm, @alexandre? @LuizArmesto?
+e disperso por alguns módulos, listados a seguir  com indicação das respectivas licenças e equipes:
 
-* [Gastos Abertos](https://github.com/okfn-brasil/gastos_abertos): licença XX em nome de 
+* [Site Cuidando do Município](https://github.com/okfn-brasil/cuidando2.git): *licença [AGPL 3](https://github.com/okfn-brasil/cuidando2/blob/master/LICENSE.txt)*. 
 
- * *Coordenação*: OKBR (fulanos?)
- * *Financeamento*: Google-XXX
+ * *equipe*: Gisele (coordenação),  Andrés (software), Solaine (design).
+
+ * [*Software*](https://github.com/okfn-brasil/cuidando2/graphs/contributors): @andresmrm e  @LuizArmesto
+
+* [Gastos Abertos](https://github.com/okfn-brasil/gastos_abertos): *licença [AGPL 3](https://github.com/okfn-brasil/gastos_abertos/blob/master/LICENSE)* em nome de [OKBR](http://br.okfn.org/)/[Projeto Gastos Abertos](http://wiki.okfn.org/Open_Knowledge_Brasil/Gastos_Abertos).
 
  * [*Software*](https://github.com/okfn-brasil/gastos_abertos/graphs/contributors): @andresmrm , @aivuk, @LuizArmesto, @waffle-iron, @carlosandrade, @lpirola
 
 * [Microserviços](https://en.wikipedia.org/wiki/Microservices) e módulos de apoio:
 
-  *  [eSIC Livre](https://github.com/okfn-brasil/esiclivre): licença XX em nome de 
+  *  [eSIC Livre](https://github.com/okfn-brasil/esiclivre): *licença [AGPL 3](https://github.com/okfn-brasil/esiclivre/blob/master/LICENSE.txt)*. 
+    *  *esquipe*: @alexandre e @andresmrm
 
-    * *Coordenação*: ...
-
-    * *Software*:
-
-  *  [Tagarela](https://github.com/okfn-brasil/tagarela): licença XX em nome de 
-    * *Coordenação*: ...
-    * *Financeamento*: ...
-    * *Apoio*: USP, OKBR,...
-
-    * *Design*:
-
-    * *Software*:
+  *  [Tagarela](https://github.com/okfn-brasil/tagarela): *licença [AGPL 3](https://github.com/okfn-brasil/tagarela/blob/master/LICENSE.txt)*.  
+    *  *esquipe*: @andresmrm
      
-  *  [Viralata](https://github.com/okfn-brasil/tagarela): licença XX em nome de 
-    * *Coordenação*: ...
+  *  [Viralata](https://github.com/okfn-brasil/viralata): *licença [AGPL 3](https://github.com/okfn-brasil/viralata/blob/master/LICENSE.txt)*. 
+    *  *esquipe*: @andresmrm
 
-    * *Software*:
+  *  [Viratoken](https://github.com/okfn-brasil/viratoken): licença *[AGPL 3](https://github.com/okfn-brasil/viratoken/blob/master/LICENSE.txt)* em nome de 
+    *  *esquipe*: @andresmrm
 
-  *  [Viratoken](https://github.com/okfn-brasil/viratoken): licença XX em nome de 
-
-    * *Coordenação*: ...
-
-    * *Software*:
 
