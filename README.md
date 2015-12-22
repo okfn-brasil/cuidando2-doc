@@ -1,6 +1,6 @@
 # Cuidando do Meu Bairro
 
-Projeto *Cuidando do Meu Bairro*: apresentação participativa e geolocalização do orçamento municipal. 
+Projeto *Cuidando do Meu Bairro*: abertura e geolocalização do orçamento municipal. 
 
 **Acesso**:
 
@@ -86,6 +86,7 @@ O Cuidando2 é um projeto realizado por várias mãos,
 * Gisele S. Craveiro (coordenação), 
 * Jutta Machado Schimdt
 * Solaine Lima
+* e todos os parceiros e beta-testers, que  auxiliaram com sugestoes criativas e construtivas
 
 com apoio de,
 
@@ -116,6 +117,6 @@ e disperso por alguns módulos, listados a seguir  com indicação das respectiv
      
   *  [Viralata](https://github.com/okfn-brasil/viralata): *licença [AGPLv3](https://github.com/okfn-brasil/viralata/blob/master/LICENSE.txt)*, software @andresmrm.
 
-  *  [Viratoken](https://github.com/okfn-brasil/viratoken): licença *[AGPLv3](https://github.com/okfn-brasil/viratoken/blob/master/LICENSE.txt)*, software @andresmrm.
+  *  [Viratoken](https://github.com/okfn-brasil/viratoken): *licença [AGPLv3](https://github.com/okfn-brasil/viratoken/blob/master/LICENSE.txt)*, software @andresmrm.
 
 
