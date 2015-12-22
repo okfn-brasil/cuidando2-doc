@@ -95,13 +95,13 @@ com apoio de,
 
 e disperso por alguns módulos, listados a seguir  com indicação das respectivas licenças e equipes:
 
-* [Site Cuidando do Município](https://github.com/okfn-brasil/cuidando2.git): *licença [AGPL 3](https://github.com/okfn-brasil/cuidando2/blob/master/LICENSE.txt)*. 
+* [Site Cuidando do Município](https://github.com/okfn-brasil/cuidando2.git): *licença [AGPLv3](https://github.com/okfn-brasil/cuidando2/blob/master/LICENSE.txt)*. 
 
  * *equipe*: Gisele (coordenação),  Andrés (software), Solaine (design).
 
  * [*Software*](https://github.com/okfn-brasil/cuidando2/graphs/contributors): @andresmrm e  @LuizArmesto
 
-* [Gastos Abertos](https://github.com/okfn-brasil/gastos_abertos): *licença [AGPL 3](https://github.com/okfn-brasil/gastos_abertos/blob/master/LICENSE)* em nome de [OKBR](http://br.okfn.org/)/[Projeto Gastos Abertos](http://wiki.okfn.org/Open_Knowledge_Brasil/Gastos_Abertos).
+* [Gastos Abertos](https://github.com/okfn-brasil/gastos_abertos): *licença [AGPLv3](https://github.com/okfn-brasil/gastos_abertos/blob/master/LICENSE)* em nome de [OKBR](http://br.okfn.org/)/[Projeto Gastos Abertos](http://wiki.okfn.org/Open_Knowledge_Brasil/Gastos_Abertos).
 
  * [*Dados*](https://github.com/okfn-brasil/gastos_abertos/commits/master/data):  @aivuk, @andresmrm.
 
@@ -109,13 +109,13 @@ e disperso por alguns módulos, listados a seguir  com indicação das respectiv
 
 * Demais [microserviços](https://en.wikipedia.org/wiki/Microservices) e módulos de apoio:
 
-  *  [eSIC Livre](https://github.com/okfn-brasil/esiclivre): *licença [AGPL 3](https://github.com/okfn-brasil/esiclivre/blob/master/LICENSE.txt)*. 
-    *  *esquipe*: @alexandre e @andresmrm
+  *  [eSIC Livre](https://github.com/okfn-brasil/esiclivre): *licença [AGPLv3](https://github.com/okfn-brasil/esiclivre/blob/master/LICENSE.txt)*. 
+    *  *equipe*: @alexandre e @andresmrm
 
-  *  [Tagarela](https://github.com/okfn-brasil/tagarela): *licença [AGPL 3](https://github.com/okfn-brasil/tagarela/blob/master/LICENSE.txt)*, software @andresmrm.
+  *  [Tagarela](https://github.com/okfn-brasil/tagarela): *licença [AGPLv3](https://github.com/okfn-brasil/tagarela/blob/master/LICENSE.txt)*, software @andresmrm.
      
-  *  [Viralata](https://github.com/okfn-brasil/viralata): *licença [AGPL 3](https://github.com/okfn-brasil/viralata/blob/master/LICENSE.txt)*, software @andresmrm.
+  *  [Viralata](https://github.com/okfn-brasil/viralata): *licença [AGPLv3](https://github.com/okfn-brasil/viralata/blob/master/LICENSE.txt)*, software @andresmrm.
 
-  *  [Viratoken](https://github.com/okfn-brasil/viratoken): licença *[AGPL 3](https://github.com/okfn-brasil/viratoken/blob/master/LICENSE.txt)*, software @andresmrm.
+  *  [Viratoken](https://github.com/okfn-brasil/viratoken): licença *[AGPLv3](https://github.com/okfn-brasil/viratoken/blob/master/LICENSE.txt)*, software @andresmrm.
 
 
