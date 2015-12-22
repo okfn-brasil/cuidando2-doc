@@ -87,7 +87,7 @@ O Cuidando2 é um projeto realizado por várias mãos,
 * Jutta Machado Schimdt
 * Solaine Lima
 
-por mais de um apoio,
+com apoio de,
 
 * [COLAB-USP](http://colab.each.usp.br/) 
 * [OKBR](http://br.okfn.org/)
@@ -103,20 +103,19 @@ e disperso por alguns módulos, listados a seguir  com indicação das respectiv
 
 * [Gastos Abertos](https://github.com/okfn-brasil/gastos_abertos): *licença [AGPL 3](https://github.com/okfn-brasil/gastos_abertos/blob/master/LICENSE)* em nome de [OKBR](http://br.okfn.org/)/[Projeto Gastos Abertos](http://wiki.okfn.org/Open_Knowledge_Brasil/Gastos_Abertos).
 
- * [*Software*](https://github.com/okfn-brasil/gastos_abertos/graphs/contributors): @andresmrm , @aivuk, @LuizArmesto, @waffle-iron, @carlosandrade, @lpirola
+ * [*Dados*](https://github.com/okfn-brasil/gastos_abertos/commits/master/data):  @aivuk, @andresmrm.
 
-* [Microserviços](https://en.wikipedia.org/wiki/Microservices) e módulos de apoio:
+ * [*Software*](https://github.com/okfn-brasil/gastos_abertos/graphs/contributors): @andresmrm , @aivuk, @LuizArmesto, @waffle-iron, @carlosandrade, @lpirola.
+
+* Demais [microserviços](https://en.wikipedia.org/wiki/Microservices) e módulos de apoio:
 
   *  [eSIC Livre](https://github.com/okfn-brasil/esiclivre): *licença [AGPL 3](https://github.com/okfn-brasil/esiclivre/blob/master/LICENSE.txt)*. 
     *  *esquipe*: @alexandre e @andresmrm
 
-  *  [Tagarela](https://github.com/okfn-brasil/tagarela): *licença [AGPL 3](https://github.com/okfn-brasil/tagarela/blob/master/LICENSE.txt)*.  
-    *  *esquipe*: @andresmrm
+  *  [Tagarela](https://github.com/okfn-brasil/tagarela): *licença [AGPL 3](https://github.com/okfn-brasil/tagarela/blob/master/LICENSE.txt)*, software @andresmrm.
      
-  *  [Viralata](https://github.com/okfn-brasil/viralata): *licença [AGPL 3](https://github.com/okfn-brasil/viralata/blob/master/LICENSE.txt)*. 
-    *  *esquipe*: @andresmrm
+  *  [Viralata](https://github.com/okfn-brasil/viralata): *licença [AGPL 3](https://github.com/okfn-brasil/viralata/blob/master/LICENSE.txt)*, software @andresmrm.
 
-  *  [Viratoken](https://github.com/okfn-brasil/viratoken): licença *[AGPL 3](https://github.com/okfn-brasil/viratoken/blob/master/LICENSE.txt)* em nome de 
-    *  *esquipe*: @andresmrm
+  *  [Viratoken](https://github.com/okfn-brasil/viratoken): licença *[AGPL 3](https://github.com/okfn-brasil/viratoken/blob/master/LICENSE.txt)*, software @andresmrm.
 
 
