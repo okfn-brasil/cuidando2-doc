@@ -5,7 +5,7 @@ O projeto pode rodar nas mais diversas plataformas com um mínimo de adaptaçõe
 
 Para a obtenção de uma documentação mais clara e limpa foi adotada [convention over configuration](https://en.wikipedia.org/wiki/Convention_over_configuration), ou seja, não serão comentadas todas as possibilidades de configuração, pressupomos certas convenções, e ficaria a cargo do usuário ou de uma documentação secundária qualquer desvio da convenção adotada.  Padrões de referência:
 
-* Servidores web homologados:  [Ubuntu 14 LTS](https://en.wikipedia.org/wiki/List_of_Ubuntu_releases#Ubuntu_14.04_LTS_.28Trusty_Tahr.29), mais algum?
+* Sistema Operacional: Arch Linux 64 bits.
 * Navegadores homologados: Firefox 42+, Chorme 46+.
 
 
