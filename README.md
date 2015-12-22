@@ -60,13 +60,17 @@ Uma outra forma comum de replicação é a integral, quando se deseja instalar e
 ### Replicando apenas o site
 Na ausência de dados da cidade, operaria em modo "somente leitura". Util para designers e trabalhos restritos ao site.
 
-Texto completo de instruções em [install-municipio.md](install-municipio.md).
+Texto completo de instruções em [install-site.md](install-site.md).
 
 
-### Replicando serviços
-Se o interesse for reproduzir apenas os microserviços, deve-se reproduzir também as bases de dados. 
+### Replicando serviços e preparo dos dados
+Para reproduzir os microserviços, deve-se reproduzir também as bases de dados. 
 
-Texto completo de instruções em [install-services.md](install-services.md).
+As instruções para replicação do *software* estão em [install-services.md](install-services.md). A preparação dos dados pode ser realizada de três modos:
+
+* *sandbox*: base de dados mínima com dados de teste.
+* *referência*: dados da base em operação, em um site Cuidando já implantado.
+* *novo*: construir uma base de dados nova (por exemplo para um novo município). A metodologia e dicas encontram-se descritas [nesta Wiki](https://pt.wikiversity.org/wiki/Projeto_Cuidando_do_Meu_Bairro/Novos_dados).
 
 ### Replicação completa 
 Para replicar ambos, o site e os serviços, um script mais consido também é oferecido:  [install-full.sh](install-full.sh).
