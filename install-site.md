@@ -1,9 +1,9 @@
-Uma versão compacta das instruções a seguir, é oferecida também em [`municipio.sh`](./src/municipio.sh).
+Uma versão compacta das instruções a seguir, é oferecida também em [`site.sh`](./src/site.sh).
 
 ## Escolhas e convenções
 O projeto pode rodar nas mais diversas plataformas com um mínimo de adaptações. A título de homologação, todavia, apenas um ambiente foi apreciado. 
 
-Para a obtenção de uma documentação mais clara e limpa foi adotada [convention over configuration](https://en.wikipedia.org/wiki/Convention_over_configuration), ou seja, não serão comentas todas as possibilidades de configuração, pressupomos certas convenções, e ficaria a cargo do usuário ou de uma documentação secundária qualquer desvio da convenção adotada.  Padrões de referência:
+Para a obtenção de uma documentação mais clara e limpa foi adotada [convention over configuration](https://en.wikipedia.org/wiki/Convention_over_configuration), ou seja, não serão comentadas todas as possibilidades de configuração, pressupomos certas convenções, e ficaria a cargo do usuário ou de uma documentação secundária qualquer desvio da convenção adotada.  Padrões de referência:
 
 * Servidores web homologados:  [Ubuntu 14 LTS](https://en.wikipedia.org/wiki/List_of_Ubuntu_releases#Ubuntu_14.04_LTS_.28Trusty_Tahr.29), mais algum?
 * Navegadores homologados: Firefox 42+, Chorme 46+.
