@@ -1,8 +1,5 @@
 # -*- coding: utf-8 -*-
 #
-# SciELO Publishing Schema documentation build configuration file, created by
-# sphinx-quickstart on Thu Jun 26 12:23:19 2014.
-#
 # This file is execfile()d with the current directory set to its
 # containing dir.
 #
@@ -176,7 +173,7 @@ html_last_updated_fmt = '%b %d, %Y'
 #html_file_suffix = None
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'SciELOPublishingSchemadoc'
+htmlhelp_basename = 'Cuidando-doc'
 
 
 # -- Options for LaTeX output ---------------------------------------------
@@ -226,8 +223,8 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'scielopublishingschema', u'SciELO Publishing Schema Documentation',
-     [u'SciELO'], 1)
+    ('index', 'cuidando', u'Cuidando do Meu Bairro - documentação',
+     [u'Cuidando'], 1)
 ]
 
 # If true, show URL addresses after external links.
