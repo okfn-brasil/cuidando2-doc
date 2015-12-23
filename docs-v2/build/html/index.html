@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Cuidando do Meu Bairro &mdash; Cuidando do meu bairro 1.0 documentation</title>
+    <title>Cuidando do Meu Bairro &mdash; Cuidando do meu bairro 1.0 documentação</title>
     
     <link rel="stylesheet" href="_static/classic.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -23,19 +23,20 @@
     <script type="text/javascript" src="_static/jquery.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
-    <link rel="top" title="Cuidando do meu bairro 1.0 documentation" href="#" />
+    <script type="text/javascript" src="_static/translations.js"></script>
+    <link rel="top" title="Cuidando do meu bairro 1.0 documentação" href="#" />
     <link rel="next" title="Escolhas e convenções" href="install-site.html" /> 
   </head>
   <body role="document">
     <div class="related" role="navigation" aria-label="related navigation">
-      <h3>Navigation</h3>
+      <h3>Navegação</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="genindex.html" title="General Index"
-             accesskey="I">index</a></li>
+          <a href="genindex.html" title="Índice Geral"
+             accesskey="I">índice</a></li>
         <li class="right" >
           <a href="install-site.html" title="Escolhas e convenções"
-             accesskey="N">next</a> |</li>
+             accesskey="N">próximo</a> |</li>
         <li class="nav-item nav-item-0"><a href="#">Cuidando</a> &raquo;</li> 
       </ul>
     </div>  
@@ -46,7 +47,7 @@
           <div class="body" role="main">
             
   <div class="section" id="cuidando-do-meu-bairro">
-<h1>Cuidando do Meu Bairro<a class="headerlink" href="#cuidando-do-meu-bairro" title="Permalink to this headline">¶</a></h1>
+<h1>Cuidando do Meu Bairro<a class="headerlink" href="#cuidando-do-meu-bairro" title="Link permanente para este título">¶</a></h1>
 <p>Versão 1.0 - dezembro de 2015.</p>
 <p>Projeto <em>Cuidando do Meu Bairro</em>: abertura e geolocalização do orçamento municipal.</p>
 <p><strong>Acesso</strong>:</p>
@@ -82,7 +83,7 @@ Bairro</a>.</li>
 <a class="reference external" href="http://wiki.okfn.org/Open_Knowledge_Brasil/Gastos_Abertos">wiki.okfn.org</a>.</li>
 </ul>
 <div class="section" id="historico-e-versoes">
-<h2>Histórico e versões<a class="headerlink" href="#historico-e-versoes" title="Permalink to this headline">¶</a></h2>
+<h2>Histórico e versões<a class="headerlink" href="#historico-e-versoes" title="Link permanente para este título">¶</a></h2>
 <p>Este projeto teve origem no <a class="reference external" href="http://cuidando.org.br">Cuidando do Meu Bairro de
 2013</a>, que buscava mapear a execução do
 orçamento municipal de São Paulo, não só em regiões, mas também
@@ -105,7 +106,7 @@ mapeadas, ou acabam exibidas no local errado. No Cuidando2 o processo
 foi aperfeiçoado para reduzir a taxa de erros.</p>
 </div>
 <div class="section" id="arquitetura">
-<h2>Arquitetura<a class="headerlink" href="#arquitetura" title="Permalink to this headline">¶</a></h2>
+<h2>Arquitetura<a class="headerlink" href="#arquitetura" title="Link permanente para este título">¶</a></h2>
 <p>Buscando ampliar a chance de reuso do código desenvolvido e permitir um nível
 maior de interação com outros aplicativos, o projeto seguiu uma arquitetura de
 micro serviços. Ou seja, ao invés de ter um único código monolítico que
@@ -169,7 +170,7 @@ exemplificando o uso de cada uma das operações
 disponíveis no microserviço.</p>
 </div>
 <div class="section" id="modos-de-operacao-e-replicacao">
-<h2>Modos de operação e replicação<a class="headerlink" href="#modos-de-operacao-e-replicacao" title="Permalink to this headline">¶</a></h2>
+<h2>Modos de operação e replicação<a class="headerlink" href="#modos-de-operacao-e-replicacao" title="Link permanente para este título">¶</a></h2>
 <p>Conforme a finalidade, o projeto pode ser copiado e adaptado, parcial ou
 integralmente. O caso típico é a replicação para atuar com outros
 municípios, mudando apenas o escopo de dados no Gastos Abertos e
@@ -179,7 +180,7 @@ instalar e testar localmente (o programador no seu computador) para
 entender melhor o funcionamento do software como um todo, ou para
 realizar (através de <em>fork</em>) adaptações maiores.</p>
 <div class="section" id="replicando-apenas-o-site">
-<h3>Replicando apenas o site<a class="headerlink" href="#replicando-apenas-o-site" title="Permalink to this headline">¶</a></h3>
+<h3>Replicando apenas o site<a class="headerlink" href="#replicando-apenas-o-site" title="Link permanente para este título">¶</a></h3>
 <p>Na ausência de dados da cidade, operaria em modo &#8220;somente leitura&#8221;. Util
 para designers e trabalhos restritos ao site.</p>
 <div class="toctree-wrapper compound">
@@ -193,7 +194,7 @@ para designers e trabalhos restritos ao site.</p>
 <p>(disponível também em <a class="reference external" href="https://github.com/okfn-brasil/cuidando2-doc/blob/master/install-services.md">install-site.md</a>).</p>
 </div>
 <div class="section" id="replicando-servicos-e-preparo-dos-dados">
-<h3>Replicando serviços e preparo dos dados<a class="headerlink" href="#replicando-servicos-e-preparo-dos-dados" title="Permalink to this headline">¶</a></h3>
+<h3>Replicando serviços e preparo dos dados<a class="headerlink" href="#replicando-servicos-e-preparo-dos-dados" title="Link permanente para este título">¶</a></h3>
 <p>Para reproduzir os microserviços, deve-se reproduzir também as bases de
 dados.</p>
 <p>As instruções para replicação do <em>software</em> estão em
@@ -209,13 +210,13 @@ Wiki</a>.</li>
 </ul>
 </div>
 <div class="section" id="replicacao-completa">
-<h3>Replicação completa<a class="headerlink" href="#replicacao-completa" title="Permalink to this headline">¶</a></h3>
+<h3>Replicação completa<a class="headerlink" href="#replicacao-completa" title="Link permanente para este título">¶</a></h3>
 <p>Para replicar ambos, o site e os serviços, um script mais consido também
 é oferecido: <a class="reference external" href="https://github.com/okfn-brasil/cuidando2-doc/blob/master/src/full.sh">src/full.sh</a>.</p>
 </div>
 </div>
 <div class="section" id="creditos-e-licencas">
-<h2>CRÉDITOS E LICENÇAS<a class="headerlink" href="#creditos-e-licencas" title="Permalink to this headline">¶</a></h2>
+<h2>CRÉDITOS E LICENÇAS<a class="headerlink" href="#creditos-e-licencas" title="Link permanente para este título">¶</a></h2>
 <p>A presente documentação e todos os scripts <a class="reference external" href="https://github.com/okfn-brasil/cuidando2-doc">deste módulo de
 documentação</a> estão
 licenceados sob <a class="reference external" href="http://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a>.</p>
@@ -269,11 +270,11 @@ software &#64;andresmrm.</li>
 </div>
 </div>
 <div class="section" id="indices-and-tables">
-<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Link permanente para este título">¶</a></h1>
 <ul class="simple">
-<li><a class="reference internal" href="genindex.html"><span>Index</span></a></li>
-<li><a class="reference internal" href="py-modindex.html"><span>Module Index</span></a></li>
-<li><a class="reference internal" href="search.html"><span>Search Page</span></a></li>
+<li><a class="reference internal" href="genindex.html"><span>Índice</span></a></li>
+<li><a class="reference internal" href="py-modindex.html"><span>Índice do Módulo</span></a></li>
+<li><a class="reference internal" href="search.html"><span>Página de Pesquisa</span></a></li>
 </ul>
 </div>
 
@@ -283,7 +284,7 @@ software &#64;andresmrm.</li>
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
-  <h3><a href="#">Table Of Contents</a></h3>
+  <h3><a href="#">Tabela de Conteúdo</a></h3>
   <ul>
 <li><a class="reference internal" href="#">Cuidando do Meu Bairro</a><ul>
 <li><a class="reference internal" href="#historico-e-versoes">Histórico e versões</a></li>
@@ -300,26 +301,26 @@ software &#64;andresmrm.</li>
 <li><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>
 </ul>
 
-  <h4>Next topic</h4>
+  <h4>Próximo tópico</h4>
   <p class="topless"><a href="install-site.html"
-                        title="next chapter">Escolhas e convenções</a></p>
+                        title="próximo capítulo">Escolhas e convenções</a></p>
   <div role="note" aria-label="source link">
-    <h3>This Page</h3>
+    <h3>Esta Página</h3>
     <ul class="this-page-menu">
       <li><a href="_sources/index.txt"
-            rel="nofollow">Show Source</a></li>
+            rel="nofollow">Exibir Fonte</a></li>
     </ul>
    </div>
 <div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
+  <h3>Pesquisa rápida</h3>
     <form class="search" action="search.html" method="get">
       <input type="text" name="q" />
-      <input type="submit" value="Go" />
+      <input type="submit" value="Ir" />
       <input type="hidden" name="check_keywords" value="yes" />
       <input type="hidden" name="area" value="default" />
     </form>
     <p class="searchtip" style="font-size: 90%">
-    Enter search terms or a module, class or function name.
+    Digite os termos da busca ou o nome de um módulo, classe ou função.
     </p>
 </div>
 <script type="text/javascript">$('#searchbox').show(0);</script>
@@ -328,21 +329,21 @@ software &#64;andresmrm.</li>
       <div class="clearer"></div>
     </div>
     <div class="related" role="navigation" aria-label="related navigation">
-      <h3>Navigation</h3>
+      <h3>Navegação</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="genindex.html" title="General Index"
-             >index</a></li>
+          <a href="genindex.html" title="Índice Geral"
+             >índice</a></li>
         <li class="right" >
           <a href="install-site.html" title="Escolhas e convenções"
-             >next</a> |</li>
+             >próximo</a> |</li>
         <li class="nav-item nav-item-0"><a href="#">Cuidando</a> &raquo;</li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">
         &copy; Copyright .
-      Last updated on Dec 23, 2015.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.3.
+      Última atualização em Dec 23, 2015.
+      Criado usando <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.3.
     </div>
   </body>
 </html>
