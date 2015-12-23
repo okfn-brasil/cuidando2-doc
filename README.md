@@ -32,8 +32,11 @@ A extração dos endereços a partir do texto é obtida através de  [*expressõ
 A geocodificação desses endereços é realizada pelas [API](https://en.wikipedia.org/wiki/Application_programming_interface)s [OpenStreetMap-Nomination](http://wiki.openstreetmap.org/wiki/Nominatim) e [Google-geocoding](https://developers.google.com/maps/documentation/geocoding/intro). Esse processo não é perfeito, acumula erros tanto da fase de extração como da fase de geocodificação, de modo que muitas despesas não são mapeadas, ou acabam exibidas no local errado. No Cuidando2 o processo foi aperfeiçoado para reduzir a taxa de erros.
 
 ## Arquitetura
-
-Abaixo estão representados os diversos módulos nos quais esse projeto se baseia:
+Buscando ampliar a chance de reuso do código desenvolvido e permitir um nível
+maior de interação com outros aplicativos, o projeto seguiu uma arquitetura de
+micro serviços. Ou seja, ao invés de ter um único código monolítico que
+implementasse todas as funcionalidades desejadas, elas foram distribuídas em
+pequenos módulos, cada um com uma funcionalidade específica:
 
 ![Alt text](https://raw.githubusercontent.com/okfn-brasil/cuidando2-doc/master/img/cuidando2_arq2-827px.png)
 
@@ -43,11 +46,11 @@ A navegação HTML é de responsabilidade do [*Cuidando2*](https://github.com/ok
 
 | Função | Responsabilidade | **Endpoint** em uso | Notas |
 |--------|------------------|--------------|-------|
-|Geolocalização|*Gastos Abertos*|[site-cuidando.rhcloud.com/dados/api/v1](https://site-cuidando.rhcloud.com/dados/api/v1)|leitura das coordenadas|
-|Dados de execução orçamentária|*Gastos Abertos*|[demo.gastosabertos.org](http://demo.gastosabertos.org)|consulta à base de dados|
-|Autenticação dos usuários|[*Vira-Lata*](https://github.com/okfn-brasil/viralata)|[viralata-cuidando.rhcloud.com](https://viralata-cuidando.rhcloud.com)|token de acesso, leitura/escrita|
-|Comentários dos usuários|[*Tagarela*](https://github.com/okfn-brasil/tagarela) |[tagarela-cuidando.rhcloud.com](https://tagarela-cuidando.rhcloud.com)|leitura/escrita dos textos|
-|Interface com eSIC|[*EsicLivre*](https://github.com/okfn-brasil/esiclivre)|[cuidando.vc/esiclivre](https://cuidando.vc/esiclivre) |realização de pedidos de informação, leitura/escrita|
+|Geolocalização|*Gastos Abertos*|[site-cuidando.rhcloud.com/dados/api/v1](https://site-cuidando.rhcloud.com/dados/api/v1)|leitura das coordenadas.|
+|Dados de execução orçamentária|*Gastos Abertos*|[demo.gastosabertos.org](http://demo.gastosabertos.org)|Serviço de provimento de dados, leitura da base.|
+|Autenticação dos usuários|[*Vira-Lata*](https://github.com/okfn-brasil/viralata)|[viralata-cuidando.rhcloud.com](https://viralata-cuidando.rhcloud.com)|Token de acesso, leitura/escrita.|
+|Comentários dos usuários|[*Tagarela*](https://github.com/okfn-brasil/tagarela) |[tagarela-cuidando.rhcloud.com](https://tagarela-cuidando.rhcloud.com)|Serviço de comentários, leitura/escrita dos textos|
+|Interface com eSIC|[*EsicLivre*](https://github.com/okfn-brasil/esiclivre)|[cuidando.vc/esiclivre](https://cuidando.vc/esiclivre) |Serviço de pedidos de informação, leitura/postagem.|
 
 Cada um desses *endpoints* apresenta também uma documentação mais detalhada da API quando acessado diretamente do navegador, exemplificando o uso de cada uma das operações [REST](https://en.wikipedia.org/wiki/Representational_state_transfer) disponíveis no microserviço.
 
