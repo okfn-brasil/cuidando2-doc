@@ -183,7 +183,7 @@ respectivas licenças e equipes:
 -  `Site Cuidando do
    Município <https://github.com/okfn-brasil/cuidando2.git>`__: licença `AGPLv3 <https://github.com/okfn-brasil/cuidando2/blob/master/LICENSE.txt>`__.
 
-     -  *equipe*: Gisele (coordenação), Andrés (software), Solaine (design).
+   -  *equipe*: Gisele (coordenação), Andrés (software), Solaine (design).
 
 -  `Software <https://github.com/okfn-brasil/cuidando2/graphs/contributors>`__:
    @andresmrm e @LuizArmesto
@@ -193,10 +193,10 @@ respectivas licenças e equipes:
    em nome de `OKBR <http://br.okfn.org/>`__/`Projeto Gastos
    Abertos <http://wiki.okfn.org/Open_Knowledge_Brasil/Gastos_Abertos>`__.
 
--  `*Dados* <https://github.com/okfn-brasil/gastos_abertos/commits/master/data>`__:
+-  `Dados <https://github.com/okfn-brasil/gastos_abertos/commits/master/data>`__:
    @aivuk, @andresmrm.
 
--  `*Software* <https://github.com/okfn-brasil/gastos_abertos/graphs/contributors>`__:
+-  `Software <https://github.com/okfn-brasil/gastos_abertos/graphs/contributors>`__:
    @andresmrm , @aivuk, @LuizArmesto, @waffle-iron, @carlosandrade,
    @lpirola.
 
