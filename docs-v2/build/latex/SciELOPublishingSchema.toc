@@ -1,0 +1,14 @@
+\select@language {english}
+\contentsline {chapter}{\numberline {1}Hist\IeC {\'o}rico e vers\IeC {\~o}es}{3}{chapter.1}
+\contentsline {chapter}{\numberline {2}Arquitetura}{5}{chapter.2}
+\contentsline {chapter}{\numberline {3}Modos de opera\IeC {\c c}\IeC {\~a}o e replica\IeC {\c c}\IeC {\~a}o}{7}{chapter.3}
+\contentsline {section}{\numberline {3.1}Replicando apenas o site}{7}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Escolhas e conven\IeC {\c c}\IeC {\~o}es}{7}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Conferir ambiente}{7}{subsection.3.1.2}
+\contentsline {subsubsection}{Atualizar o ambiente}{8}{subsubsection*.3}
+\contentsline {subsection}{\numberline {3.1.3}Clonar e instalar o projeto}{8}{subsection.3.1.3}
+\contentsline {subsection}{\numberline {3.1.4}Rodar}{8}{subsection.3.1.4}
+\contentsline {section}{\numberline {3.2}Replicando servi\IeC {\c c}os e preparo dos dados}{8}{section.3.2}
+\contentsline {section}{\numberline {3.3}Replica\IeC {\c c}\IeC {\~a}o completa}{9}{section.3.3}
+\contentsline {chapter}{\numberline {4}CR\IeC {\'E}DITOS E LICEN\IeC {\c C}AS}{11}{chapter.4}
+\contentsline {chapter}{\numberline {5}Indices and tables}{13}{chapter.5}
