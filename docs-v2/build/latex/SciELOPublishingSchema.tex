@@ -21,7 +21,7 @@
 
 \title{SciELO Publishing Schema Documentation}
 \date{December 23, 2015}
-\release{1.3}
+\release{1.0}
 \author{SciELO}
 \newcommand{\sphinxlogo}{}
 \renewcommand{\releasename}{Release}
@@ -130,128 +130,9 @@
 \phantomsection\label{index::doc}
 
 
-Versão 1.3 - dezembro de 2015.
+Versão 1.0 - dezembro de 2015.
 
-Projeto \emph{Cuidando do Meu Bairro}: documentação e geolocalização do orçamento municipal.
-
-Uma versão compacta das instruções a seguir, é oferecida também em site.sh.
-
-
-\chapter{Escolhas e convenções}
-\label{install-site::doc}\label{install-site:escolhas-e-convencoes}\label{install-site:cuidando-do-meu-bairro}
-O projeto pode rodar nas mais diversas plataformas com um mínimo de
-adaptações. A título de homologação, todavia, apenas um ambiente foi
-apreciado.
-
-Para a obtenção de uma documentação mais clara e limpa foi adotada
-\href{https://en.wikipedia.org/wiki/Convention\_over\_configuration}{convention over
-configuration},
-ou seja, não serão comentadas todas as possibilidades de configuração,
-pressupomos certas convenções, e ficaria a cargo do usuário ou de uma
-documentação secundária qualquer desvio da convenção adotada. Padrões de
-referência:
-\begin{itemize}
-\item {} 
-Sistema Operacional: Arch Linux 64 bits.
-
-\item {} 
-Navegadores homologados: Firefox 42+, Chorme 46+.
-
-\end{itemize}
-
-
-\chapter{Conferir ambiente}
-\label{install-site:conferir-ambiente}
-Será entendido como ``ambiente'' do servidor do projeto,
-\begin{itemize}
-\item {} 
-Linux \textbf{Ubuntu 14.04+ LTS}: pode ser mais atualizado, mas são
-pressupostas restrições do LTS nos exemplos de atualização. Conferir
-com \code{lsb\_release -a} (resultará ex. 14.04.3).
-
-\item {} 
-\textbf{Git 1.9+}: \code{git -{-}version} (ex. 1.9.1).
-
-\item {} 
-Server-side \textbf{Javascript engine V8, v4.6+}:
-\code{node -p process.versions.v8} (ex. 4.6.85)
-
-\item {} 
-\textbf{NodeJS v5.2+}: \code{nodejs -{-}version}(ex. v5.2.0)
-
-\item {} 
-\textbf{npm 3.5+} (do NodeJS): \code{npm -v} (ex. 3.5.2) ou \code{npm version},
-que mostra também o nodejs e o v8.
-
-\end{itemize}
-
-
-\section{Atualizar o ambiente}
-\label{install-site:atualizar-o-ambiente}
-As versões mínimas indicadas de \emph{NodeJS} e \code{npm} precisam ser
-respeitadas. Na sua instalação default o UBUNTU 14 LTS, todavia, não
-oferece versões atualizadas, nem mesmo após o tradicional
-\code{apt-get install}. O procedimento mais simples e correto para instalar
-é o seguinte:
-
-\begin{Verbatim}[commandchars=\\\{\}]
-curl \PYGZhy{}sL https://deb.nodesource.com/setup\PYGZus{}5.x \textbar{} sudo \PYGZhy{}E bash \PYGZhy{}
-sudo apt\PYGZhy{}get install \PYGZhy{}y nodejs
-\end{Verbatim}
-
-que já é suficiente para ambos, \emph{NodeJS} e \code{npm}. Confira as versões
-com \code{npm -v} e \code{nodejs -{-}version}. O V8 em geral já se encontra
-atualizado, mas vale conferir com \code{nodejs -p process.versions.v8}.
-
-Nota: o \code{npm} vem com o \code{nodejs}, \emph{evite} o \code{apt-get install npm}
-pois pode aparentar erro ou gerar versão muito antiga. Para garantir a
-atualização do \code{npm} use ele mesmo,
-
-\begin{Verbatim}[commandchars=\\\{\}]
-sudo npm install npm \PYGZhy{}g
-\end{Verbatim}
-
-
-\chapter{Clonar e instalar o projeto}
-\label{install-site:clonar-e-instalar-o-projeto}
-\begin{Verbatim}[commandchars=\\\{\}]
-git clone https://github.com/okfn\PYGZhy{}brasil/cuidando2.git
-cd cuidando2
-\end{Verbatim}
-
-Em seguida verifique as configurações de \code{configs/config.js}. O caso
-típico é mudar apenas o domínio para o local de teste,
-
-\begin{Verbatim}[commandchars=\\\{\}]
-nano configs/config.js
-  ...
-  const \PYGZus{}domain = \PYGZsq{}http://localhost:\PYGZsq{}
-  ...
-\end{Verbatim}
-
-Caso não vá apenas simular o site, ou apenas reusar os microserviços de
-São Paulo, há que se configurar mais parâmetros. Feito isso, roda a
-instalação:
-
-\begin{Verbatim}[commandchars=\\\{\}]
-npm i
-\end{Verbatim}
-
-O ultimo comando vai um barra de progresso... Sinal que está indo tudo
-bem.
-
-
-\chapter{Rodar}
-\label{install-site:rodar}
-Para rodar o site:
-
-\begin{Verbatim}[commandchars=\\\{\}]
-npm run dev
-\end{Verbatim}
-
-Depois acesse \code{localhost:5001} em um navegador. Se quiser que o código
-atualize automaticamente conforme editar os arquivos, acesse
-\code{localhost:5001/webpack-dev-server/}.
+Projeto \emph{Cuidando do Meu Bairro}: abertura e geolocalização do orçamento municipal.
 
 \textbf{Acesso}:
 \begin{itemize}
@@ -314,7 +195,7 @@ Administração do projeto:
 
 
 \chapter{Histórico e versões}
-\label{index:historico-e-versoes}
+\label{index:historico-e-versoes}\label{index:cuidando-do-meu-bairro}
 Este projeto teve origem no \href{http://cuidando.org.br}{Cuidando do Meu Bairro de
 2013}, que buscava mapear a execução do
 orçamento municipal de São Paulo, não só em regiões, mas também
@@ -341,10 +222,13 @@ foi aperfeiçoado para reduzir a taxa de erros.
 
 \chapter{Arquitetura}
 \label{index:arquitetura}
-Abaixo estão representados os diversos módulos nos quais esse projeto se
-baseia:
+Buscando ampliar a chance de reuso do código desenvolvido e permitir um nível
+maior de interação com outros aplicativos, o projeto seguiu uma arquitetura de
+micro serviços. Ou seja, ao invés de ter um único código monolítico que
+implementasse todas as funcionalidades desejadas, elas foram distribuídas em
+pequenos módulos, cada um com uma funcionalidade específica:
 
-
+\includegraphics{cuidando2_arq2-827px.png}
 
 As setas avermelhadas indicam conexões em que as escritas provavelmente
 necessitarão de um
@@ -440,7 +324,126 @@ realizar (através de \emph{fork}) adaptações maiores.
 Na ausência de dados da cidade, operaria em modo ``somente leitura''. Util
 para designers e trabalhos restritos ao site.
 
-Texto completo de instruções em \href{https://github.com/okfn-brasil/cuidando2-doc/blob/master/install-services.md}{install-site.md}.
+Uma versão compacta das instruções a seguir, é oferecida também em \href{https://github.com/okfn-brasil/cuidando2-doc/blob/master/src/site.sh}{site.sh}.
+
+
+\subsection{Escolhas e convenções}
+\label{install-site::doc}\label{install-site:escolhas-e-convencoes}
+O projeto pode rodar nas mais diversas plataformas com um mínimo de
+adaptações. A título de homologação, todavia, apenas um ambiente foi
+apreciado.
+
+Para a obtenção de uma documentação mais clara e limpa foi adotada
+\href{https://en.wikipedia.org/wiki/Convention\_over\_configuration}{convention over
+configuration},
+ou seja, não serão comentadas todas as possibilidades de configuração,
+pressupomos certas convenções, e ficaria a cargo do usuário ou de uma
+documentação secundária qualquer desvio da convenção adotada. Padrões de
+referência:
+\begin{itemize}
+\item {} 
+Sistema Operacional: Arch Linux 64 bits.
+
+\item {} 
+Navegadores homologados: Firefox 42+, Chorme 46+.
+
+\end{itemize}
+
+
+\subsection{Conferir ambiente}
+\label{install-site:conferir-ambiente}
+Será entendido como ``ambiente'' do servidor do projeto,
+\begin{itemize}
+\item {} 
+Linux \textbf{Ubuntu 14.04+ LTS}: pode ser mais atualizado, mas são
+pressupostas restrições do LTS nos exemplos de atualização. Conferir
+com \code{lsb\_release -a} (resultará ex. 14.04.3).
+
+\item {} 
+\textbf{Git 1.9+}: \code{git -{-}version} (ex. 1.9.1).
+
+\item {} 
+Server-side \textbf{Javascript engine V8, v4.6+}:
+\code{node -p process.versions.v8} (ex. 4.6.85)
+
+\item {} 
+\textbf{NodeJS v5.2+}: \code{nodejs -{-}version}(ex. v5.2.0)
+
+\item {} 
+\textbf{npm 3.5+} (do NodeJS): \code{npm -v} (ex. 3.5.2) ou \code{npm version},
+que mostra também o nodejs e o v8.
+
+\end{itemize}
+
+
+\subsubsection{Atualizar o ambiente}
+\label{install-site:atualizar-o-ambiente}
+As versões mínimas indicadas de \emph{NodeJS} e \code{npm} precisam ser
+respeitadas. Na sua instalação default o UBUNTU 14 LTS, todavia, não
+oferece versões atualizadas, nem mesmo após o tradicional
+\code{apt-get install}. O procedimento mais simples e correto para instalar
+é o seguinte:
+
+\begin{Verbatim}[commandchars=\\\{\}]
+curl \PYGZhy{}sL https://deb.nodesource.com/setup\PYGZus{}5.x \textbar{} sudo \PYGZhy{}E bash \PYGZhy{}
+sudo apt\PYGZhy{}get install \PYGZhy{}y nodejs
+\end{Verbatim}
+
+que já é suficiente para ambos, \emph{NodeJS} e \code{npm}. Confira as versões
+com \code{npm -v} e \code{nodejs -{-}version}. O V8 em geral já se encontra
+atualizado, mas vale conferir com \code{nodejs -p process.versions.v8}.
+
+Nota: o \code{npm} vem com o \code{nodejs}, \emph{evite} o \code{apt-get install npm}
+pois pode aparentar erro ou gerar versão muito antiga. Para garantir a
+atualização do \code{npm} use ele mesmo,
+
+\begin{Verbatim}[commandchars=\\\{\}]
+sudo npm install npm \PYGZhy{}g
+\end{Verbatim}
+
+
+\subsection{Clonar e instalar o projeto}
+\label{install-site:clonar-e-instalar-o-projeto}
+\begin{Verbatim}[commandchars=\\\{\}]
+git clone https://github.com/okfn\PYGZhy{}brasil/cuidando2.git
+cd cuidando2
+\end{Verbatim}
+
+Em seguida verifique as configurações de \code{configs/config.js}. O caso
+típico é mudar apenas o domínio para o local de teste,
+
+\begin{Verbatim}[commandchars=\\\{\}]
+nano configs/config.js
+  ...
+  const \PYGZus{}domain = \PYGZsq{}http://localhost:\PYGZsq{}
+  ...
+\end{Verbatim}
+
+Caso não vá apenas simular o site, ou apenas reusar os microserviços de
+São Paulo, há que se configurar mais parâmetros. Feito isso, roda a
+instalação:
+
+\begin{Verbatim}[commandchars=\\\{\}]
+npm i
+\end{Verbatim}
+
+O ultimo comando vai um barra de progresso... Sinal que está indo tudo
+bem.
+
+
+\subsection{Rodar}
+\label{install-site:rodar}
+Para rodar o site:
+
+\begin{Verbatim}[commandchars=\\\{\}]
+npm run dev
+\end{Verbatim}
+
+Depois acesse \code{localhost:5001} em um navegador. Se quiser que o código
+atualize automaticamente conforme editar os arquivos, acesse
+\code{localhost:5001/webpack-dev-server/}.
+
+(disponível também em \href{https://github.com/okfn-brasil/cuidando2-doc/blob/master/install-services.md}{install-site.md}).
 
 
 \section{Replicando serviços e preparo dos dados}
@@ -470,7 +473,7 @@ Wiki}.
 \section{Replicação completa}
 \label{index:replicacao-completa}
 Para replicar ambos, o site e os serviços, um script mais consido também
-é oferecido: install-full.sh.
+é oferecido: \href{https://github.com/okfn-brasil/cuidando2-doc/blob/master/src/full.sh}{src/full.sh}.
 
 
 \chapter{CRÉDITOS E LICENÇAS}
@@ -496,6 +499,9 @@ Jutta Machado Schimdt
 
 \item {} 
 Solaine Lima
+
+\item {} 
+... e todos os parceiros e beta-testers, que  auxiliaram com sugestoes criativas e construtivas
 
 \end{itemize}
 

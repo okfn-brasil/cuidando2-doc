@@ -1,4 +1,4 @@
-Uma versão compacta das instruções a seguir, é oferecida também em `site.sh <./src/site.sh>`__.
+Uma versão compacta das instruções a seguir, é oferecida também em `site.sh <https://github.com/okfn-brasil/cuidando2-doc/blob/master/src/site.sh>`__.
 
 Escolhas e convenções
 ---------------------

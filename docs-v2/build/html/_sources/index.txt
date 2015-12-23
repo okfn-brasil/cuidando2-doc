@@ -3,14 +3,7 @@ Cuidando do Meu Bairro
 
 Versão |version| - dezembro de 2015.
 
-Projeto *Cuidando do Meu Bairro*: documentação e geolocalização do orçamento municipal.
-
-.. toctree::
-   :maxdepth: 3
-
-   install-site
-
-
+Projeto *Cuidando do Meu Bairro*: abertura e geolocalização do orçamento municipal. 
 
 **Acesso**:
 
@@ -74,8 +67,11 @@ foi aperfeiçoado para reduzir a taxa de erros.
 Arquitetura
 -----------
 
-Abaixo estão representados os diversos módulos nos quais esse projeto se
-baseia:
+Buscando ampliar a chance de reuso do código desenvolvido e permitir um nível
+maior de interação com outros aplicativos, o projeto seguiu uma arquitetura de
+micro serviços. Ou seja, ao invés de ter um único código monolítico que
+implementasse todas as funcionalidades desejadas, elas foram distribuídas em
+pequenos módulos, cada um com uma funcionalidade específica:
 
 |Alt text|
 
@@ -128,7 +124,12 @@ Replicando apenas o site
 Na ausência de dados da cidade, operaria em modo "somente leitura". Util
 para designers e trabalhos restritos ao site.
 
-Texto completo de instruções em `install-site.md <https://github.com/okfn-brasil/cuidando2-doc/blob/master/install-services.md>`__.
+.. toctree::
+   :maxdepth: 1
+
+   install-site
+
+(disponível também em `install-site.md <https://github.com/okfn-brasil/cuidando2-doc/blob/master/install-services.md>`__).
 
 Replicando serviços e preparo dos dados
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -151,7 +152,7 @@ Replicação completa
 ~~~~~~~~~~~~~~~~~~~
 
 Para replicar ambos, o site e os serviços, um script mais consido também
-é oferecido: `install-full.sh <install-full.sh>`__.
+é oferecido: `src/full.sh <https://github.com/okfn-brasil/cuidando2-doc/blob/master/src/full.sh>`__.
 
 CRÉDITOS E LICENÇAS
 -------------------
@@ -168,6 +169,7 @@ O Cuidando2 é um projeto realizado por várias mãos,
 -  Gisele S. Craveiro (coordenação),
 -  Jutta Machado Schimdt
 -  Solaine Lima
+-  ... e todos os parceiros e beta-testers, que  auxiliaram com sugestoes criativas e construtivas
 
 com apoio de,
 
@@ -215,7 +217,7 @@ respectivas licenças e equipes:
 -  `Viratoken <https://github.com/okfn-brasil/viratoken>`__: licença `AGPLv3 <https://github.com/okfn-brasil/viratoken/blob/master/LICENSE.txt>`__,
    software @andresmrm.
 
-.. |Alt text| image:: https://raw.githubusercontent.com/okfn-brasil/cuidando2-doc/master/img/cuidando2_arq2-827px.png
+.. |Alt text| image:: cuidando2_arq2-827px.png
 
 
 Indices and tables

@@ -48,18 +48,7 @@
   <div class="section" id="cuidando-do-meu-bairro">
 <h1>Cuidando do Meu Bairro<a class="headerlink" href="#cuidando-do-meu-bairro" title="Permalink to this headline">¶</a></h1>
 <p>Versão 1.0 - dezembro de 2015.</p>
-<p>Projeto <em>Cuidando do Meu Bairro</em>: documentação e geolocalização do orçamento municipal.</p>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="install-site.html">Escolhas e convenções</a></li>
-<li class="toctree-l1"><a class="reference internal" href="install-site.html#conferir-ambiente">Conferir ambiente</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="install-site.html#atualizar-o-ambiente">Atualizar o ambiente</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="install-site.html#clonar-e-instalar-o-projeto">Clonar e instalar o projeto</a></li>
-<li class="toctree-l1"><a class="reference internal" href="install-site.html#rodar">Rodar</a></li>
-</ul>
-</div>
+<p>Projeto <em>Cuidando do Meu Bairro</em>: abertura e geolocalização do orçamento municipal.</p>
 <p><strong>Acesso</strong>:</p>
 <ul class="simple">
 <li>Portal e implantação para o município de São Paulo em  <a class="reference external" href="http://cuidando.vc">Cuidando.vc</a>.</li>
@@ -117,9 +106,12 @@ foi aperfeiçoado para reduzir a taxa de erros.</p>
 </div>
 <div class="section" id="arquitetura">
 <h2>Arquitetura<a class="headerlink" href="#arquitetura" title="Permalink to this headline">¶</a></h2>
-<p>Abaixo estão representados os diversos módulos nos quais esse projeto se
-baseia:</p>
-<p><img alt="Alt text" src="https://raw.githubusercontent.com/okfn-brasil/cuidando2-doc/master/img/cuidando2_arq2-827px.png" /></p>
+<p>Buscando ampliar a chance de reuso do código desenvolvido e permitir um nível
+maior de interação com outros aplicativos, o projeto seguiu uma arquitetura de
+micro serviços. Ou seja, ao invés de ter um único código monolítico que
+implementasse todas as funcionalidades desejadas, elas foram distribuídas em
+pequenos módulos, cada um com uma funcionalidade específica:</p>
+<p><img alt="Alt text" src="_images/cuidando2_arq2-827px.png" /></p>
 <p>As setas avermelhadas indicam conexões em que as escritas provavelmente
 necessitarão de um
 <a class="reference external" href="https://github.com/okfn-brasil/viralata#protocol">token</a>.</p>
@@ -190,7 +182,15 @@ realizar (através de <em>fork</em>) adaptações maiores.</p>
 <h3>Replicando apenas o site<a class="headerlink" href="#replicando-apenas-o-site" title="Permalink to this headline">¶</a></h3>
 <p>Na ausência de dados da cidade, operaria em modo &#8220;somente leitura&#8221;. Util
 para designers e trabalhos restritos ao site.</p>
-<p>Texto completo de instruções em <a class="reference external" href="https://github.com/okfn-brasil/cuidando2-doc/blob/master/install-services.md">install-site.md</a>.</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="install-site.html">Escolhas e convenções</a></li>
+<li class="toctree-l1"><a class="reference internal" href="install-site.html#conferir-ambiente">Conferir ambiente</a></li>
+<li class="toctree-l1"><a class="reference internal" href="install-site.html#clonar-e-instalar-o-projeto">Clonar e instalar o projeto</a></li>
+<li class="toctree-l1"><a class="reference internal" href="install-site.html#rodar">Rodar</a></li>
+</ul>
+</div>
+<p>(disponível também em <a class="reference external" href="https://github.com/okfn-brasil/cuidando2-doc/blob/master/install-services.md">install-site.md</a>).</p>
 </div>
 <div class="section" id="replicando-servicos-e-preparo-dos-dados">
 <h3>Replicando serviços e preparo dos dados<a class="headerlink" href="#replicando-servicos-e-preparo-dos-dados" title="Permalink to this headline">¶</a></h3>
@@ -211,7 +211,7 @@ Wiki</a>.</li>
 <div class="section" id="replicacao-completa">
 <h3>Replicação completa<a class="headerlink" href="#replicacao-completa" title="Permalink to this headline">¶</a></h3>
 <p>Para replicar ambos, o site e os serviços, um script mais consido também
-é oferecido: <a class="reference external" href="install-full.sh">install-full.sh</a>.</p>
+é oferecido: <a class="reference external" href="https://github.com/okfn-brasil/cuidando2-doc/blob/master/src/full.sh">src/full.sh</a>.</p>
 </div>
 </div>
 <div class="section" id="creditos-e-licencas">
@@ -227,6 +227,7 @@ licenceados sob <a class="reference external" href="http://creativecommons.org/l
 <li>Gisele S. Craveiro (coordenação),</li>
 <li>Jutta Machado Schimdt</li>
 <li>Solaine Lima</li>
+<li>... e todos os parceiros e beta-testers, que  auxiliaram com sugestoes criativas e construtivas</li>
 </ul>
 <p>com apoio de,</p>
 <ul class="simple">
