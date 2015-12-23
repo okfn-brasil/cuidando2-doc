@@ -1,0 +1,102 @@
+Uma versão compacta das instruções a seguir, é oferecida também em `site.sh <./src/site.sh>`__.
+
+Escolhas e convenções
+---------------------
+
+O projeto pode rodar nas mais diversas plataformas com um mínimo de
+adaptações. A título de homologação, todavia, apenas um ambiente foi
+apreciado.
+
+Para a obtenção de uma documentação mais clara e limpa foi adotada
+`convention over
+configuration <https://en.wikipedia.org/wiki/Convention_over_configuration>`__,
+ou seja, não serão comentadas todas as possibilidades de configuração,
+pressupomos certas convenções, e ficaria a cargo do usuário ou de uma
+documentação secundária qualquer desvio da convenção adotada. Padrões de
+referência:
+
+-  Sistema Operacional: Arch Linux 64 bits.
+-  Navegadores homologados: Firefox 42+, Chorme 46+.
+
+Conferir ambiente
+-----------------
+
+Será entendido como "ambiente" do servidor do projeto,
+
+-  Linux **Ubuntu 14.04+ LTS**: pode ser mais atualizado, mas são
+   pressupostas restrições do LTS nos exemplos de atualização. Conferir
+   com ``lsb_release -a`` (resultará ex. 14.04.3).
+-  **Git 1.9+**: ``git --version`` (ex. 1.9.1).
+-  Server-side **Javascript engine V8, v4.6+**:
+   ``node -p process.versions.v8`` (ex. 4.6.85)
+-  **NodeJS v5.2+**: ``nodejs --version``\ (ex. v5.2.0)
+-  **npm 3.5+** (do NodeJS): ``npm -v`` (ex. 3.5.2) ou ``npm version``,
+   que mostra também o nodejs e o v8.
+
+Atualizar o ambiente
+~~~~~~~~~~~~~~~~~~~~
+
+As versões mínimas indicadas de *NodeJS* e ``npm`` precisam ser
+respeitadas. Na sua instalação default o UBUNTU 14 LTS, todavia, não
+oferece versões atualizadas, nem mesmo após o tradicional
+``apt-get install``. O procedimento mais simples e correto para instalar
+é o seguinte:
+
+::
+
+     curl -sL https://deb.nodesource.com/setup_5.x | sudo -E bash -
+     sudo apt-get install -y nodejs
+
+que já é suficiente para ambos, *NodeJS* e ``npm``. Confira as versões
+com ``npm -v`` e ``nodejs --version``. O V8 em geral já se encontra
+atualizado, mas vale conferir com ``nodejs -p process.versions.v8``.
+
+Nota: o ``npm`` vem com o ``nodejs``, *evite* o ``apt-get install npm``
+pois pode aparentar erro ou gerar versão muito antiga. Para garantir a
+atualização do ``npm`` use ele mesmo,
+
+::
+
+     sudo npm install npm -g 
+
+Clonar e instalar o projeto
+---------------------------
+
+::
+
+    git clone https://github.com/okfn-brasil/cuidando2.git
+    cd cuidando2
+
+Em seguida verifique as configurações de ``configs/config.js``. O caso
+típico é mudar apenas o domínio para o local de teste,
+
+::
+
+    nano configs/config.js
+      ...
+      const _domain = 'http://localhost:'
+      ...
+
+Caso não vá apenas simular o site, ou apenas reusar os microserviços de
+São Paulo, há que se configurar mais parâmetros. Feito isso, roda a
+instalação:
+
+::
+
+    npm i
+
+O ultimo comando vai um barra de progresso... Sinal que está indo tudo
+bem.
+
+Rodar
+-----
+
+Para rodar o site:
+
+::
+
+    npm run dev
+
+Depois acesse ``localhost:5001`` em um navegador. Se quiser que o código
+atualize automaticamente conforme editar os arquivos, acesse
+``localhost:5001/webpack-dev-server/``.

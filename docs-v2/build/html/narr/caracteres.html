@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Codificação e caracteres especiais &mdash; SciELO Publishing Schema 1.3 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.3',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="copyright" title="Copyright" href="../copyright.html" />
+    <link rel="top" title="SciELO Publishing Schema 1.3 documentation" href="../index.html" />
+    <link rel="next" title="Regra de Nomeação de Arquivos" href="regra-nomeacao.html" />
+    <link rel="prev" title="O que há de novo na SciELO PS 1.1" href="../whatsnew-1.1.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="regra-nomeacao.html" title="Regra de Nomeação de Arquivos"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="../whatsnew-1.1.html" title="O que há de novo na SciELO PS 1.1"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">SciELO PS</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="codificacao-e-caracteres-especiais">
+<h1>Codificação e caracteres especiais<a class="headerlink" href="#codificacao-e-caracteres-especiais" title="Permalink to this headline">¶</a></h1>
+<p>A especificação SciELO PS exige que os documentos <a class="reference internal" href="../glossary.html#term-xml"><span class="xref std std-term">XML</span></a> estejam codificados
+em <a class="reference internal" href="../glossary.html#term-utf-8"><span class="xref std std-term">UTF-8</span></a>, e que declarem esta codificação na <span class="xref std std-term">Declaração do XML</span>:</p>
+<div class="highlight-python"><div class="highlight"><pre>&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+</pre></div>
+</div>
+<p>Caracteres especiais devem ser inseridos ou diretamente no documento ou por meio
+de referências numéricas em hexadecimal. Por exemplo, o caractere sigma maiúsculo
+deverá ser representado por <code class="docutils literal"><span class="pre">Σ</span></code> ou <code class="docutils literal"><span class="pre">&amp;#x03A3</span></code>.</p>
+<p>Não é permitido o uso de referências à caracteres de uso privado da tabela
+Unicode. Estes são os caracteres cujas referências estão contidas no
+intervalo <code class="docutils literal"><span class="pre">xE000</span> <span class="pre">–</span> <span class="pre">xF8FF</span></code>.</p>
+<p>Entidades XML também são aceitas e devem ser utilizadas para representar os
+caracteres:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="15%" />
+<col width="13%" />
+<col width="72%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Caractere</th>
+<th class="head">Entidade</th>
+<th class="head">Descrição</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>&#8220;</td>
+<td>&amp;quot;</td>
+<td>Aspas como valor de atributo de elemento no XML.</td>
+</tr>
+<tr class="row-odd"><td>&#8216;</td>
+<td>&amp;apos;</td>
+<td>Apóstrofo como valor de atributo de elemento no XML.</td>
+</tr>
+<tr class="row-even"><td>&amp;</td>
+<td>&amp;amp;</td>
+<td>&amp; como valor de atributo ou texto de elemento no XML.</td>
+</tr>
+<tr class="row-odd"><td>&lt;</td>
+<td>&amp;lt;</td>
+<td>&lt; como valor de atributo ou texto de elemento no XML.</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>&amp;gt;</td>
+<td>&gt; como valor de atributo ou texto de elemento no XML.</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="../whatsnew-1.1.html"
+                        title="previous chapter">O que há de novo na SciELO PS 1.1</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="regra-nomeacao.html"
+                        title="next chapter">Regra de Nomeação de Arquivos</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/narr/caracteres.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="regra-nomeacao.html" title="Regra de Nomeação de Arquivos"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="../whatsnew-1.1.html" title="O que há de novo na SciELO PS 1.1"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">SciELO PS</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &copy; <a href="../copyright.html">Copyright</a> .
+      Last updated on Dec 22, 2015.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.3.
+    </div>
+  </body>
+</html>

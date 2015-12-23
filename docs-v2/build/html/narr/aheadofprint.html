@@ -1,0 +1,155 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Ahead Of Print &mdash; SciELO Publishing Schema 1.3 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.3',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="copyright" title="Copyright" href="../copyright.html" />
+    <link rel="top" title="SciELO Publishing Schema 1.3 documentation" href="../index.html" />
+    <link rel="next" title="Perguntas frequentes" href="../faq.html" />
+    <link rel="prev" title="Errata" href="errata.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../faq.html" title="Perguntas frequentes"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="errata.html" title="Errata"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">SciELO PS</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="ahead-of-print">
+<span id="id1"></span><h1>Ahead Of Print<a class="headerlink" href="#ahead-of-print" title="Permalink to this headline">¶</a></h1>
+<p>Todos os arquivos Ahead Of Print (AOP) devem apresentar o valor
+&#8220;research-article&#8221; em <code class="docutils literal"><span class="pre">&#64;article-type</span></code> e em <code class="docutils literal"><span class="pre">//subj-group[&#64;subj-group-type=&quot;heading&quot;]/subject</span></code>
+considerar &#8220;Articles&#8221;. Esse tipo de documento não apresenta volume, número e
+paginação, portanto os elementos <a class="reference internal" href="../tagset.html#elemento-volume"><span>&lt;volume&gt;</span></a> e <a class="reference internal" href="../tagset.html#elemento-issue"><span>&lt;issue&gt;</span></a>
+não devem ser utilizados. Considerar &#8220;00&#8221; somente para páginação como segue o exemplo abaixo:</p>
+<div class="highlight-xml"><div class="highlight"><pre><span class="nt">&lt;article&gt;</span>
+    ...
+    <span class="nt">&lt;article-meta&gt;</span>
+        <span class="nt">&lt;pub-date</span> <span class="na">pub-type=</span><span class="s">&quot;epub&quot;</span><span class="nt">&gt;</span>
+            ...
+        <span class="nt">&lt;/pub-date&gt;</span>
+        <span class="nt">&lt;fpage&gt;</span>000<span class="nt">&lt;/fpage&gt;</span>
+        <span class="nt">&lt;lpage&gt;</span>000<span class="nt">&lt;/lpage&gt;</span>
+    <span class="nt">&lt;/article-meta&gt;</span>
+    ...
+<span class="nt">&lt;/article&gt;</span>
+</pre></div>
+</div>
+<p>Para arquivos Ahead Of Print, a data de publicação deve ser apenas &#8220;epub&#8221; e com
+os todos os elementos preenchidos: <a class="reference internal" href="../tagset.html#elemento-day"><span>&lt;day&gt;</span></a>, <a class="reference internal" href="../tagset.html#elemento-month"><span>&lt;month&gt;</span></a> e
+<a class="reference internal" href="../tagset.html#elemento-year"><span>&lt;year&gt;</span></a>.</p>
+<div class="highlight-xml"><div class="highlight"><pre><span class="nt">&lt;article&gt;</span>
+    ...
+    <span class="nt">&lt;article-meta&gt;</span>
+        <span class="nt">&lt;author-notes&gt;</span>
+            ...
+        <span class="nt">&lt;/author-notes&gt;</span>
+        <span class="nt">&lt;pub-date</span> <span class="na">pub-type=</span><span class="s">&quot;epub&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;day&gt;</span>13<span class="nt">&lt;/day&gt;</span>
+            <span class="nt">&lt;month&gt;</span>03<span class="nt">&lt;/month&gt;</span>
+            <span class="nt">&lt;year&gt;</span>2015<span class="nt">&lt;/year&gt;</span>
+        <span class="nt">&lt;/pub-date&gt;</span>
+    <span class="nt">&lt;/article-meta&gt;</span>
+    ...
+<span class="nt">&lt;/article&gt;</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Em AOP considerar sempre a tag <a class="reference internal" href="../tagset.html#elemento-month"><span>&lt;month&gt;</span></a> para indicação de mês. Nunca inserir <a class="reference internal" href="../tagset.html#elemento-season"><span>&lt;season&gt;</span></a>.</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="errata.html"
+                        title="previous chapter">Errata</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="../faq.html"
+                        title="next chapter">Perguntas frequentes</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/narr/aheadofprint.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../faq.html" title="Perguntas frequentes"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="errata.html" title="Errata"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">SciELO PS</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &copy; <a href="../copyright.html">Copyright</a> .
+      Last updated on Dec 22, 2015.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.3.
+    </div>
+  </body>
+</html>

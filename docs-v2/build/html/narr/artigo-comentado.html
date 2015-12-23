@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Artigo Comentado &mdash; SciELO Publishing Schema 1.3 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.3',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="copyright" title="Copyright" href="../copyright.html" />
+    <link rel="top" title="SciELO Publishing Schema 1.3 documentation" href="../index.html" />
+    <link rel="next" title="Errata" href="errata.html" />
+    <link rel="prev" title="Regra de Nomeação de Arquivos" href="regra-nomeacao.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="errata.html" title="Errata"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="regra-nomeacao.html" title="Regra de Nomeação de Arquivos"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">SciELO PS</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="artigo-comentado">
+<span id="id1"></span><h1>Artigo Comentado<a class="headerlink" href="#artigo-comentado" title="Permalink to this headline">¶</a></h1>
+<p>Artigos que apresentam resposta que está diretamente relacionado ao artigo
+principal devem apresentar um elemento <a class="reference internal" href="../tagset.html#elemento-related-article"><span>&lt;related-article&gt;</span></a>.
+Para isso, no artigo principal o atributo <code class="docutils literal"><span class="pre">&#64;article-type</span></code> deve ter como valor
+<strong>article-commentary</strong></p>
+<blockquote>
+<div>&#64;article-type=&#8221;article-commentary&#8221;</div></blockquote>
+<p>Em <a class="reference internal" href="../tagset.html#elemento-response"><span>&lt;response&gt;</span></a>, inserir o elemento <a class="reference internal" href="../tagset.html#elemento-related-article"><span>&lt;related-article&gt;</span></a>.
+Exemplo:</p>
+<div class="highlight-xml"><div class="highlight"><pre>...
+<span class="nt">&lt;article</span> <span class="na">xmlns:xlink=</span><span class="s">&quot;http://www.w3.org/1999/xlink&quot;</span> <span class="na">xmlns:mml=</span><span class="s">&quot;http://www.w3.org/1998/Math/MathML&quot;</span> <span class="na">xmlns:xsi=</span><span class="s">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span> <span class="na">specific-use=</span><span class="s">&quot;sps-1.2&quot;</span> <span class="na">dtd-version=</span><span class="s">&quot;1.0&quot;</span> <span class="na">article-type=</span><span class="s">&quot;article-commentary&quot;</span> <span class="na">xml:lang=</span><span class="s">&quot;en&quot;</span><span class="nt">&gt;</span>
+  ...
+  <span class="nt">&lt;back&gt;</span>
+    ...
+  <span class="nt">&lt;/back&gt;</span>
+  <span class="nt">&lt;response</span> <span class="na">response-type=</span><span class="s">&quot;reply&quot;</span> <span class="na">id=</span><span class="s">&quot;r01&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;front-stub&gt;</span>
+      ...
+      <span class="nt">&lt;related-article</span> <span class="na">related-article-type=</span><span class="s">&quot;article-commentary&quot;</span> <span class="na">id=</span><span class="s">&quot;r01&quot;</span> <span class="na">vol=</span><span class="s">&quot;109&quot;</span> <span class="na">page=</span><span class="s">&quot;87-92&quot;</span><span class="nt">/&gt;</span>
+      <span class="nt">&lt;counts&gt;</span>
+      ...
+    <span class="nt">&lt;/front-stub&gt;</span>
+  <span class="nt">&lt;/response&gt;</span>
+<span class="nt">&lt;/article&gt;</span>
+</pre></div>
+</div>
+<p>Para artigo relacionado, o elemento <a class="reference internal" href="../tagset.html#elemento-related-article"><span>&lt;related-article&gt;</span></a> deve
+apresentar os seguintes atributos: <code class="docutils literal"><span class="pre">&#64;related-article-type</span></code> com o valor
+<strong>article-commentary</strong>; <code class="docutils literal"><span class="pre">&#64;id</span></code>; <code class="docutils literal"><span class="pre">&#64;vol</span></code> e <code class="docutils literal"><span class="pre">&#64;page</span></code> com a informação do
+intervalo de paginação do documento.</p>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="regra-nomeacao.html"
+                        title="previous chapter">Regra de Nomeação de Arquivos</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="errata.html"
+                        title="next chapter">Errata</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/narr/artigo-comentado.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="errata.html" title="Errata"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="regra-nomeacao.html" title="Regra de Nomeação de Arquivos"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">SciELO PS</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &copy; <a href="../copyright.html">Copyright</a> .
+      Last updated on Dec 22, 2015.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.3.
+    </div>
+  </body>
+</html>

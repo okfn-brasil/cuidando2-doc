@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>O que há de novo na SciELO PS 1.3 &mdash; SciELO Publishing Schema 1.3 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.3',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="SciELO Publishing Schema 1.3 documentation" href="../index.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="nav-item nav-item-0"><a href="../index.html">SciELO PS</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="o-que-ha-de-novo-na-scielo-ps-1-3">
+<h1>O que há de novo na SciELO PS 1.3<a class="headerlink" href="#o-que-ha-de-novo-na-scielo-ps-1-3" title="Permalink to this headline">¶</a></h1>
+<p>Este artigo explica as alterações da especificação <a class="reference internal" href="glossary.html#term-scielo-ps"><span class="xref std std-term">SciELO PS</span></a> versão 1.3 em
+relação à sua predecessora, a versão 1.2.</p>
+<ul class="simple">
+<li>Elementos <code class="docutils literal"><span class="pre">//article-meta/volume</span></code> e <code class="docutils literal"><span class="pre">//article-meta/issue</span></code> deixaram de ser
+obrigatórios
+[<a class="reference external" href="https://github.com/scieloorg/scielo_publishing_schema/issues/132">#132</a>].</li>
+<li>Elemento <code class="docutils literal"><span class="pre">//article-meta/abstract</span></code> deixou de ser obrigatório
+[<a class="reference external" href="https://github.com/scieloorg/scielo_publishing_schema/issues/127">#127</a>].</li>
+<li>Adicionado suporte ao valor <code class="docutils literal"><span class="pre">boxed-text</span></code> em <code class="docutils literal"><span class="pre">//xref/&#64;ref-type</span></code>
+[<a class="reference external" href="https://github.com/scieloorg/scielo_publishing_schema/issues/123">#123</a>].</li>
+<li>Regra para o referenciamento de Ensaios Clínicos
+[<a class="reference external" href="https://github.com/scieloorg/scielo_publishing_schema/issues/111">#111</a>].</li>
+<li>Elemento <code class="docutils literal"><span class="pre">//article-meta/counts</span></code> deixaram de ser obrigatórios
+[<a class="reference external" href="https://github.com/scieloorg/scielo_publishing_schema/issues/104">#104</a>].</li>
+<li>Definição de regra para a identificação de rótulos multilíngues em tabelas e
+figuras.</li>
+</ul>
+<div class="section" id="quebra-de-compatibilidade">
+<h2>Quebra de compatibilidade<a class="headerlink" href="#quebra-de-compatibilidade" title="Permalink to this headline">¶</a></h2>
+<p>São as alterações na especificação que tornam inválidos os XMLs válidos na
+versão anterior.</p>
+<ul class="simple">
+<li>Valores <code class="docutils literal"><span class="pre">announcement</span></code> e <code class="docutils literal"><span class="pre">abstract</span></code> deixaram de ser suportados em
+<code class="docutils literal"><span class="pre">article/&#64;article-type</span></code>
+[<a class="reference external" href="https://github.com/scieloorg/scielo_publishing_schema/issues/124">#124</a>].</li>
+</ul>
+</div>
+<div class="section" id="documentacao">
+<h2>Documentação<a class="headerlink" href="#documentacao" title="Permalink to this headline">¶</a></h2>
+<p>São as alterações na documentação que não interferem nas regras da
+especificação.</p>
+<ul class="simple">
+<li>Cardinalidade do elemento <code class="docutils literal"><span class="pre">//contrib/name</span></code>
+[<a class="reference external" href="https://github.com/scieloorg/scielo_publishing_schema/issues/138">#138</a>].</li>
+<li>Cardinalidade do elemento <code class="docutils literal"><span class="pre">//funding-group/award-group</span></code>
+[<a class="reference external" href="https://github.com/scieloorg/scielo_publishing_schema/issues/135">#135</a>].</li>
+<li>Documentação do valor <code class="docutils literal"><span class="pre">original</span></code> no atributo <code class="docutils literal"><span class="pre">//institution/&#64;content-type</span></code>
+[<a class="reference external" href="https://github.com/scieloorg/scielo_publishing_schema/issues/126">#126</a>].</li>
+<li>Documentação do atributo <code class="docutils literal"><span class="pre">//fpage/&#64;seq</span></code> para documentos, de um mesmo número,
+que compartilham o valor de <code class="docutils literal"><span class="pre">//fpage</span></code>
+[<a class="reference external" href="https://github.com/scieloorg/scielo_publishing_schema/issues/114">#114</a>].</li>
+<li>Documentação do uso de subseções
+[<a class="reference external" href="https://github.com/scieloorg/scielo_publishing_schema/issues/99">#99</a>].</li>
+<li>Documentação do elemento <code class="docutils literal"><span class="pre">email</span></code>
+[<a class="reference external" href="https://github.com/scieloorg/scielo_publishing_schema/issues/83">#83</a>].</li>
+<li>Diversas melhorias e correções nos tópicos e exemplos
+[<a class="reference external" href="https://github.com/scieloorg/scielo_publishing_schema/issues/137">#137</a>],
+[<a class="reference external" href="https://github.com/scieloorg/scielo_publishing_schema/issues/136">#136</a>],
+[<a class="reference external" href="https://github.com/scieloorg/scielo_publishing_schema/issues/134">#134</a>],
+[<a class="reference external" href="https://github.com/scieloorg/scielo_publishing_schema/issues/133">#133</a>],
+[<a class="reference external" href="https://github.com/scieloorg/scielo_publishing_schema/issues/131">#131</a>],
+[<a class="reference external" href="https://github.com/scieloorg/scielo_publishing_schema/issues/130">#130</a>],
+[<a class="reference external" href="https://github.com/scieloorg/scielo_publishing_schema/issues/125">#125</a>],
+[<a class="reference external" href="https://github.com/scieloorg/scielo_publishing_schema/issues/122">#122</a>],
+[<a class="reference external" href="https://github.com/scieloorg/scielo_publishing_schema/issues/121">#121</a>],
+[<a class="reference external" href="https://github.com/scieloorg/scielo_publishing_schema/issues/103">#103</a>],
+[<a class="reference external" href="https://github.com/scieloorg/scielo_publishing_schema/issues/102">#102</a>].</li>
+</ul>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">O que há de novo na SciELO PS 1.3</a><ul>
+<li><a class="reference internal" href="#quebra-de-compatibilidade">Quebra de compatibilidade</a></li>
+<li><a class="reference internal" href="#documentacao">Documentação</a></li>
+</ul>
+</li>
+</ul>
+
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/LIXO/whatsnew-1.3.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="nav-item nav-item-0"><a href="../index.html">SciELO PS</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &copy; Copyright .
+      Last updated on Dec 22, 2015.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.3.
+    </div>
+  </body>
+</html>

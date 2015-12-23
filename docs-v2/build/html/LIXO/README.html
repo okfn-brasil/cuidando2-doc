@@ -1,0 +1,317 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Cuidando do Meu Bairro &mdash; SciELO Publishing Schema 1.3 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.3',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="SciELO Publishing Schema 1.3 documentation" href="../index.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="nav-item nav-item-0"><a href="../index.html">SciELO PS</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="cuidando-do-meu-bairro">
+<h1>Cuidando do Meu Bairro<a class="headerlink" href="#cuidando-do-meu-bairro" title="Permalink to this headline">¶</a></h1>
+<p>Projeto <em>Cuidando do Meu Bairro</em>: apresentação participativa e
+geolocalização do orçamento municipal.</p>
+<p><strong>Acesso</strong>:</p>
+<ul class="simple">
+<li>Portal e implantação para o município de São Paulo em  <a class="reference external" href="http://cuidando.vc">Cuidando.vc</a>.</li>
+<li>Fontes de dados orçamentários nos <a class="reference external" href="http://demo.gastosabertos.org">webservices do projeto GastosAbertos.org</a>.</li>
+</ul>
+<p><strong>Códigos-fonte</strong> (repositórios <a class="reference external" href="https://pt.wikipedia.org/wiki/Git">git</a>):</p>
+<ul class="simple">
+<li>Site:
+<a class="reference external" href="https://github.com/okfn-brasil/cuidando2">okfn-brasil/cuidando2</a></li>
+<li>Módulos de dados orçamentários:</li>
+<li>Fontes dos engines e extratores:
+<a class="reference external" href="https://github.com/okfn-brasil/gastos_abertos">okfn-brasil/gastos_abertos</a>,
+<a class="reference external" href="https://github.com/okfn-brasil/teaser.gastosabertos.org">teaser.gastosabertos.org</a>.</li>
+<li>Dados e documentação:
+<a class="reference external" href="https://github.com/okfn-brasil/gastos_abertos_dados">okfn-brasil/gastos_abertos_dados</a>,
+<a class="reference external" href="https://github.com/okfn-brasil/documents/blob/master/gastos_abertos">okfn-brasil/documents/gastos_abertos</a>.</li>
+<li>Autenticação de usuários:
+<a class="reference external" href="https://github.com/okfn-brasil/viralata">okfn-brasil/viralata</a></li>
+<li>Comunicação dos usuários:
+<a class="reference external" href="https://github.com/okfn-brasil/tagarela">okfn-brasil/tagarela</a></li>
+<li>Intermediação do eSIC:
+<a class="reference external" href="https://github.com/okfn-brasil/esiclivre">okfn-brasil/esiclivre</a></li>
+</ul>
+<p><strong>Documentação</strong>:</p>
+<ul class="simple">
+<li>Tutoriais na <a class="reference external" href="https://pt.wikiversity.org/wiki/Projeto_Cuidando_do_Meu_Bairro">Wikiversity-Português, Projeto Cuidando do Meu
+Bairro</a>.</li>
+<li>Instruções para o desenvolvedor:
+<a class="reference external" href="https://github.com/okfn-brasil/cuidando2-doc">okfn-brasil/cuidando2-doc</a>.</li>
+<li>Administração do projeto:
+<a class="reference external" href="http://wiki.okfn.org/Open_Knowledge_Brasil/Gastos_Abertos">wiki.okfn.org</a>.</li>
+</ul>
+<div class="section" id="historico-e-versoes">
+<h2>Histórico e versões<a class="headerlink" href="#historico-e-versoes" title="Permalink to this headline">¶</a></h2>
+<p>Este projeto teve origem no <a class="reference external" href="http://cuidando.org.br">Cuidando do Meu Bairro de
+2013</a>, que buscava mapear a execução do
+orçamento municipal de São Paulo, não só em regiões, mas também
+colocando um ponto no mapa para cada despesa. Por isso o presente
+projeto foi apelidado de <strong>Cuidando2</strong>: uma nova interface, novos
+recursos e melhoras nos dados gerados pelo software.</p>
+<p>Como os <a class="reference external" href="http://orcamento.prefeitura.sp.gov.br/orcamento/execucao.html">dados obtidos da
+prefeitura</a>
+não têm as coordenadas geográficas de cada despesa (no máximo algumas
+tem a região a que se destinam), o ponto de partida são os endereços nos
+textos das descrições das despesas, que por sua vez podem ser submetidos
+à <a class="reference external" href="https://en.wikipedia.org/wiki/Geocoding">geocodificação</a> em
+ferramentas adequadas.</p>
+<p>A extração dos endereços a partir do texto é obtida através de <a class="reference external" href="https://pt.wikipedia.org/wiki/Express%C3%A3o_regular">expressões regulares</a>. A geocodificação desses endereços é realizada pelas <a class="reference external" href="https://en.wikipedia.org/wiki/Application_programming_interface">API</a>s
+<a class="reference external" href="http://wiki.openstreetmap.org/wiki/Nominatim">OpenStreetMap-Nomination</a>
+e <a class="reference external" href="https://developers.google.com/maps/documentation/geocoding/intro">Google-geocoding</a>.
+Esse processo não é perfeito, acumula erros tanto da fase de extração
+como da fase de geocodificação, de modo que muitas despesas não são
+mapeadas, ou acabam exibidas no local errado. No Cuidando2 o processo
+foi aperfeiçoado para reduzir a taxa de erros.</p>
+</div>
+<div class="section" id="arquitetura">
+<h2>Arquitetura<a class="headerlink" href="#arquitetura" title="Permalink to this headline">¶</a></h2>
+<p>Abaixo estão representados os diversos módulos nos quais esse projeto se
+baseia:</p>
+<p><img alt="Alt text" src="https://raw.githubusercontent.com/okfn-brasil/cuidando2-doc/master/img/cuidando2_arq2-827px.png" /></p>
+<p>As setas avermelhadas indicam conexões em que as escritas provavelmente
+necessitarão de um
+<a class="reference external" href="https://github.com/okfn-brasil/viralata#protocol">token</a>.</p>
+<p>A navegação HTML é de responsabilidade do <a class="reference external" href="https://github.com/okfn-brasil/cuidando2">Cuidando2</a>, implementado
+atualmente em <a class="reference external" href="https://cuidando.vc">cuidando.vc</a>, que através de
+<a class="reference external" href="https://en.wikipedia.org/wiki/Ajax_(programming)">Ajax</a> faz a
+comunicação com cada módulo, nos respectivos
+<a class="reference external" href="http://www.w3.org/TR/wsdl20/#Endpoint">endpoints</a>:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="14%" />
+<col width="25%" />
+<col width="38%" />
+<col width="23%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Função</th>
+<th class="head">Responsabilidade</th>
+<th class="head"><strong>Endpoint</strong> em uso</th>
+<th class="head">Notas</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Geolocalização</td>
+<td><em>Gastos Abertos</em></td>
+<td><a class="reference external" href="https://site-cuidando.rhcloud.com/dados/api/v1">site-cuidando.rhcloud.com/dados/api/v1</a></td>
+<td>leitura das coordenadas</td>
+</tr>
+<tr class="row-odd"><td>Dados de execução orçamentária</td>
+<td><em>Gastos Abertos</em></td>
+<td><a class="reference external" href="http://demo.gastosabertos.org">demo.gastosabertos.org</a></td>
+<td>consulta à base de dados</td>
+</tr>
+<tr class="row-even"><td>Autenticação dos usuários</td>
+<td><a class="reference external" href="https://github.com/okfn-brasil/viralata">Vira-Lata</a></td>
+<td><a class="reference external" href="https://viralata-cuidando.rhcloud.com">viralata-cuidando.rhcloud.com</a></td>
+<td>token de acesso, leitura/escrita</td>
+</tr>
+<tr class="row-odd"><td>Comentários dos usuários</td>
+<td><a class="reference external" href="https://github.com/okfn-brasil/tagarela">Tagarela</a></td>
+<td><a class="reference external" href="https://tagarela-cuidando.rhcloud.com">tagarela-cuidando.rhcloud.com</a></td>
+<td>leitura/escrita dos textos</td>
+</tr>
+<tr class="row-even"><td>Interface com eSIC</td>
+<td><a class="reference external" href="https://github.com/okfn-brasil/esiclivre">EsicLivre</a></td>
+<td><a class="reference external" href="https://cuidando.vc/esiclivre">cuidando.vc/esiclivre</a></td>
+<td>realização de pedidos de informação, leitura/escrita</td>
+</tr>
+</tbody>
+</table>
+<p>Cada um desses <em>endpoints</em> apresenta também uma documentação mais
+detalhada da API quando acessado diretamente do navegador,
+exemplificando o uso de cada uma das operações
+<a class="reference external" href="https://en.wikipedia.org/wiki/Representational_state_transfer">REST</a>
+disponíveis no microserviço.</p>
+</div>
+<div class="section" id="modos-de-operacao-e-replicacao">
+<h2>Modos de operação e replicação<a class="headerlink" href="#modos-de-operacao-e-replicacao" title="Permalink to this headline">¶</a></h2>
+<p>Conforme a finalidade, o projeto pode ser copiado e adaptado, parcial ou
+integralmente. O caso típico é a replicação para atuar com outros
+municípios, mudando apenas o escopo de dados no Gastos Abertos e
+adaptando-se o <em>EsicLivre</em> para as peculiaridades do eSIC do município.</p>
+<p>Uma outra forma comum de replicação é a integral, quando se deseja
+instalar e testar localmente (o programador no seu computador) para
+entender melhor o funcionamento do software como um todo, ou para
+realizar (através de <em>fork</em>) adaptações maiores.</p>
+<div class="section" id="replicando-apenas-o-site">
+<h3>Replicando apenas o site<a class="headerlink" href="#replicando-apenas-o-site" title="Permalink to this headline">¶</a></h3>
+<p>Na ausência de dados da cidade, operaria em modo &#8220;somente leitura&#8221;. Util
+para designers e trabalhos restritos ao site.</p>
+<p>Texto completo de instruções em <a class="reference external" href="install-site.md">install-site.md</a>.</p>
+</div>
+<div class="section" id="replicando-servicos-e-preparo-dos-dados">
+<h3>Replicando serviços e preparo dos dados<a class="headerlink" href="#replicando-servicos-e-preparo-dos-dados" title="Permalink to this headline">¶</a></h3>
+<p>Para reproduzir os microserviços, deve-se reproduzir também as bases de
+dados.</p>
+<p>As instruções para replicação do <em>software</em> estão em
+<a class="reference external" href="install-services.md">install-services.md</a>. A preparação dos dados
+pode ser realizada de três modos:</p>
+<ul class="simple">
+<li><em>sandbox</em>: base de dados mínima com dados de teste.</li>
+<li><em>referência</em>: dados da base em operação, em um site Cuidando já
+implantado.</li>
+<li><em>novo</em>: construir uma base de dados nova (por exemplo para um novo
+município). A metodologia e dicas encontram-se descritas <a class="reference external" href="https://pt.wikiversity.org/wiki/Projeto_Cuidando_do_Meu_Bairro/Novos_dados">nesta
+Wiki</a>.</li>
+</ul>
+</div>
+<div class="section" id="replicacao-completa">
+<h3>Replicação completa<a class="headerlink" href="#replicacao-completa" title="Permalink to this headline">¶</a></h3>
+<p>Para replicar ambos, o site e os serviços, um script mais consido também
+é oferecido: <a class="reference external" href="install-full.sh">install-full.sh</a>.</p>
+</div>
+</div>
+<div class="section" id="creditos-e-licencas">
+<h2>CRÉDITOS E LICENÇAS<a class="headerlink" href="#creditos-e-licencas" title="Permalink to this headline">¶</a></h2>
+<p>A presente documentação e todos os scripts <a class="reference external" href="https://github.com/okfn-brasil/cuidando2-doc">deste módulo de
+documentação</a> estão
+licenceados sob <a class="reference external" href="http://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a>.</p>
+<p>O Cuidando2 é um projeto realizado por várias mãos,</p>
+<ul class="simple">
+<li>Alexandre Evangelista de Souza Júnior
+(<a class="reference external" href="https://github.com/alexandre">&#64;alexandre</a>)</li>
+<li>Andrés M. R. Martano (<a class="reference external" href="https://github.com/andresmrm">&#64;andresmrm</a>)</li>
+<li>Gisele S. Craveiro (coordenação),</li>
+<li>Jutta Machado Schimdt</li>
+<li>Solaine Lima</li>
+</ul>
+<p>com apoio de,</p>
+<ul class="simple">
+<li><a class="reference external" href="http://colab.each.usp.br/">COLAB-USP</a></li>
+<li><a class="reference external" href="http://br.okfn.org/">OKBR</a></li>
+<li>? (financeamento)</li>
+</ul>
+<p>e disperso por alguns módulos, listados a seguir com indicação das
+respectivas licenças e equipes:</p>
+<ul class="simple">
+<li><a class="reference external" href="https://github.com/okfn-brasil/cuidando2.git">Site Cuidando do
+Município</a>: licença <a class="reference external" href="https://github.com/okfn-brasil/cuidando2/blob/master/LICENSE.txt">AGPLv3</a>.</li>
+<li><em>equipe</em>: Gisele (coordenação), Andrés (software), Solaine (design).</li>
+<li><a class="reference external" href="https://github.com/okfn-brasil/cuidando2/graphs/contributors">Software</a>:
+&#64;andresmrm e &#64;LuizArmesto</li>
+<li><a class="reference external" href="https://github.com/okfn-brasil/gastos_abertos">Gastos Abertos</a>:
+licença <a class="reference external" href="https://github.com/okfn-brasil/gastos_abertos/blob/master/LICENSE">AGPLv3</a>
+em nome de <a class="reference external" href="http://br.okfn.org/">OKBR</a>/<a class="reference external" href="http://wiki.okfn.org/Open_Knowledge_Brasil/Gastos_Abertos">Projeto Gastos
+Abertos</a>.</li>
+<li><a class="reference external" href="https://github.com/okfn-brasil/gastos_abertos/commits/master/data">*Dados*</a>:
+&#64;aivuk, &#64;andresmrm.</li>
+<li><a class="reference external" href="https://github.com/okfn-brasil/gastos_abertos/graphs/contributors">*Software*</a>:
+&#64;andresmrm , &#64;aivuk, &#64;LuizArmesto, &#64;waffle-iron, &#64;carlosandrade,
+&#64;lpirola.</li>
+<li>Demais
+<a class="reference external" href="https://en.wikipedia.org/wiki/Microservices">microserviços</a> e
+módulos de apoio:</li>
+<li><a class="reference external" href="https://github.com/okfn-brasil/esiclivre">eSIC Livre</a>: licença <a class="reference external" href="https://github.com/okfn-brasil/esiclivre/blob/master/LICENSE.txt">AGPLv3</a>.<ul>
+<li><em>equipe</em>: &#64;alexandre e &#64;andresmrm</li>
+</ul>
+</li>
+<li><a class="reference external" href="https://github.com/okfn-brasil/tagarela">Tagarela</a>: licença <a class="reference external" href="https://github.com/okfn-brasil/tagarela/blob/master/LICENSE.txt">AGPLv3</a>,
+software &#64;andresmrm.</li>
+<li><a class="reference external" href="https://github.com/okfn-brasil/viralata">Viralata</a>: licença <a class="reference external" href="https://github.com/okfn-brasil/viralata/blob/master/LICENSE.txt">AGPLv3</a>,
+software &#64;andresmrm.</li>
+<li><a class="reference external" href="https://github.com/okfn-brasil/viratoken">Viratoken</a>: licença <a class="reference external" href="https://github.com/okfn-brasil/viratoken/blob/master/LICENSE.txt">AGPLv3</a>,
+software &#64;andresmrm.</li>
+</ul>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Cuidando do Meu Bairro</a><ul>
+<li><a class="reference internal" href="#historico-e-versoes">Histórico e versões</a></li>
+<li><a class="reference internal" href="#arquitetura">Arquitetura</a></li>
+<li><a class="reference internal" href="#modos-de-operacao-e-replicacao">Modos de operação e replicação</a><ul>
+<li><a class="reference internal" href="#replicando-apenas-o-site">Replicando apenas o site</a></li>
+<li><a class="reference internal" href="#replicando-servicos-e-preparo-dos-dados">Replicando serviços e preparo dos dados</a></li>
+<li><a class="reference internal" href="#replicacao-completa">Replicação completa</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#creditos-e-licencas">CRÉDITOS E LICENÇAS</a></li>
+</ul>
+</li>
+</ul>
+
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/LIXO/README.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="nav-item nav-item-0"><a href="../index.html">SciELO PS</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &copy; Copyright .
+      Last updated on Dec 22, 2015.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.3.
+    </div>
+  </body>
+</html>
