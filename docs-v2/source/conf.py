@@ -43,7 +43,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'SciELO Publishing Schema'
+project = u'Cuidando do meu bairro'
 copyright = u''
 
 # The version info for the project you're documenting, acts as replacement for
@@ -51,7 +51,7 @@ copyright = u''
 # built documents.
 #
 # The short X.Y version.
-version = '1.3'
+version = '1.0'
 # The full version, including alpha/beta/rc tags.
 release = version
 
@@ -113,7 +113,7 @@ html_theme = 'default'
 #html_title = None
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
-html_short_title = u'SciELO PS'
+html_short_title = u'Cuidando'
 
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
