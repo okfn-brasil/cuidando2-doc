@@ -175,7 +175,7 @@ com apoio de,
 
 -  `COLAB-USP <http://colab.each.usp.br/>`__
 -  `OKBR <http://br.okfn.org/>`__
--  ? (financeamento)
+-  **Financeamento**: a *versão 2.0* da ferramenta, partiu da *Iniciativa Latinoamericana por los Datos Abiertos* (ILDA), financiada pela `Fundação Avina <http://www.avina.net>`__ no contexto do *Fundo para Inovações Cívicas*
 
 e disperso por alguns módulos, listados a seguir com indicação das
 respectivas licenças e equipes:
@@ -183,7 +183,7 @@ respectivas licenças e equipes:
 -  `Site Cuidando do
    Município <https://github.com/okfn-brasil/cuidando2.git>`__: licença `AGPLv3 <https://github.com/okfn-brasil/cuidando2/blob/master/LICENSE.txt>`__.
 
--  *equipe*: Gisele (coordenação), Andrés (software), Solaine (design).
+     -  *equipe*: Gisele (coordenação), Andrés (software), Solaine (design).
 
 -  `Software <https://github.com/okfn-brasil/cuidando2/graphs/contributors>`__:
    @andresmrm e @LuizArmesto
