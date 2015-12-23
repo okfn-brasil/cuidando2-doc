@@ -95,7 +95,7 @@ com apoio de,
 
 * [COLAB-USP](http://colab.each.usp.br/) 
 * [OKBR](http://br.okfn.org/)
-* ? (financeamento)
+* Financeamento: a versão 2.0 da ferramenta, parte da Iniciativa *Latinoamericana por los Datos Abiertos (ILDA)*, financiada pela *Fundação Avina* no contexto do *Fundo para Inovações Cívicas*.
 
 e disperso por alguns módulos, listados a seguir  com indicação das respectivas licenças e equipes:
 
